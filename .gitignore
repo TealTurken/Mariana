@@ -61,3 +61,12 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Mariana/Zork.Unity.sln
+Mariana/Temp
+Mariana/Logs
+Mariana/obj
+Mariana/UserSettings
+Mariana/Assembly-CSharp.csproj
+Mariana/Library
+Mariana/.vscode
+Mariana/.vsconfig
