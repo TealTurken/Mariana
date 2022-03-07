@@ -78331,6 +78331,10 @@ PrefabInstance:
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7777143441279362833, guid: eb8a8ee8213efa44bb85ec43f553100b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7777143441279362835, guid: eb8a8ee8213efa44bb85ec43f553100b, type: 3}
       propertyPath: m_Name
       value: Horizontal_Table
