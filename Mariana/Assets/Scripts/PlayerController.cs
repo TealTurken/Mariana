@@ -2,24 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;  // is being used for debugging. To use, write "textbox.SetText("your text here");"
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
     Vector2 movement;
 
     public float moveSpeed = 4.0f;
+    public TMP_Text textbox;
     float horizontal;
     float vertical;
-
-    private bool running;
    
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody2d = GetComponent<Rigidbody2D>();  
+        rigidbody2d = GetComponent<Rigidbody2D>();
 
         moveSpeed = 4.0f;
-        running = false;
     }
 
     // Update is called once per frame
@@ -28,22 +27,38 @@ public class PlayerController : MonoBehaviour
        horizontal = Input.GetAxis("Horizontal");
        vertical = Input.GetAxis("Vertical");
 
-       Vector2 move = new Vector2(horizontal, vertical);
-    
-       if (Input.GetKeyDown(KeyCode.LeftShift))
+        Vector2 move = new Vector2(horizontal, vertical);
+       
+        #region 4 Directional Movement
+        if (horizontal > 0.5 || horizontal < -0.5)
+        {
+            vertical = 0;
+        }
+
+        if (vertical > 0.5 || vertical < -0.5)
+        {
+            horizontal = 0;
+        }
+        #endregion
+
+        #region Sprint
+        if (Input.GetKeyDown(KeyCode.LeftShift))
        {
-           running = true;
            moveSpeed = 7.0f;
        }
 
        if (Input.GetKeyUp(KeyCode.LeftShift))
        {
-           running = false;
            moveSpeed = 4.0f;
        }
-       
-       if (Input.GetKey("escape"))
+        #endregion
+
+        if (Input.GetKey("escape"))
             {
+                #if UNITY_EDITOR
+                    UnityEditor.EditorApplication.isPlaying = false;
+                #endif
+
                 print ("Quit");
                 Application.Quit();
             }

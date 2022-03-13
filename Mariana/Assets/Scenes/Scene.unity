@@ -825,7 +825,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.8922156, y: 1}
+    m_SensorSize: {x: 2.955414, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -946,7 +946,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -2443626291162255020, guid: 8d4545697b2281a4ba72782f3fc1f460, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -79023,7 +79023,7 @@ BoxCollider2D:
   m_Offset: {x: 0.021452487, y: 0.5800743}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.51872295, y: 0.069497325}
     oldSize: {x: 1.2825, y: 1.925}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -79073,7 +79073,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 8971070240157530330, guid: 03d34c26a4a81c448b33e24b2863dfee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -19,6 +19,11 @@ public class EnemyController : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
+     void Update()
+    {
+
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
