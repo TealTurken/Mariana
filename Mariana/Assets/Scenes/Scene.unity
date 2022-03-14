@@ -374,6 +374,24 @@ Transform:
   m_Father: {fileID: 1880581391}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &296877856 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4259506208975016646, guid: b38233e33a296254eb83a2f40c9d38f5, type: 3}
+  m_PrefabInstance: {fileID: 1786555392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &296877859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296877856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d170e8cbc4da8440a2a8346eed135bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemText: {fileID: 827777159}
 --- !u!1 &357406724
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,7 +843,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1213872, y: 1}
+    m_SensorSize: {x: 2.955414, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1064,7 +1082,7 @@ GameObject:
   - component: {fileID: 827777160}
   - component: {fileID: 827777159}
   m_Layer: 5
-  m_Name: PickupText
+  m_Name: itemText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78914,6 +78932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Computer_Table_Vertical (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4259506208975016646, guid: b38233e33a296254eb83a2f40c9d38f5, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b38233e33a296254eb83a2f40c9d38f5, type: 3}
 --- !u!1 &1791749118
@@ -78985,8 +79007,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a444e3f964bb1bc4a92716f6f964a374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 4
-  textbox: {fileID: 0}
+  normalSpeed: 4
+  normalSprintSpeed: 7
+  underwaterSpeed: 2
+  underwaterSprintSpeed: 4.5
 --- !u!50 &1847689921
 Rigidbody2D:
   serializedVersion: 4
@@ -79443,11 +79467,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 333026755320397702, guid: 3553deab2906865499ff86491bda08a3, type: 3}
+      propertyPath: itemText
+      value: 
+      objectReference: {fileID: 827777159}
+    - target: {fileID: 333026755320397702, guid: 3553deab2906865499ff86491bda08a3, type: 3}
       propertyPath: pickupText
       value: 
       objectReference: {fileID: 827777159}
     - target: {fileID: 333026755320397703, guid: 3553deab2906865499ff86491bda08a3, type: 3}
       propertyPath: m_Name
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 333026755320397703, guid: 3553deab2906865499ff86491bda08a3, type: 3}
+      propertyPath: m_TagString
       value: Weapon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
