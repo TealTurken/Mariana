@@ -7,11 +7,13 @@ public class ItemScript : MonoBehaviour
 {
     private bool interactAllowed;
     public TextMeshProUGUI itemText;
+    private Inventory inventory;
+    public GameObject itemButton;
 
-    
     private void Start() 
     {
         itemText.gameObject.SetActive(false);
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
     }
     
     private void Update()
@@ -48,10 +50,19 @@ public class ItemScript : MonoBehaviour
         }
     }
 
-    private void PickUp()
+    private async void PickUp()
     {
-        print ("Item picked up");
-        Destroy (gameObject);
+        for (int i = 0; i < inventory.slots.Length; i++)
+        {
+            if (inventory.isFull[i] == false)
+            {
+                inventory.isFull[i] = true;
+                Instantiate(itemButton, inventory.slots[i].transform, false);
+                Destroy (gameObject);
+                print ("Item picked up");
+                break;
+            }
+        }
     }
 
     private void Operate()
