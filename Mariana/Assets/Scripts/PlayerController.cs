@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;  // is being used for debugging. To use, write "textbox.SetText("your text here");"
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
     Vector2 movement;
+    GameObject flashlight;
 
+    int Health = 3;
+    private bool isInvulnerable;
+    float Oxygen = 100;
     float moveSpeed; // actual movement speed applied to player character
     float sprintSpeed; // actual sprint speed
     public float normalSpeed = 4.0f;
@@ -21,11 +24,13 @@ public class PlayerController : MonoBehaviour
     float vertical;
     Scene newScene;
     Scene activeScene;
-   
-    // Start is called before the first frame update
+    [SerializeField]
+    private float invulnerablityDurationSeconds = 3.0f;
+
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+        flashlight = this.transform.GetChild(0).gameObject; // gets the flashlight on the player
         #region Movement speed
         newScene = SceneManager.GetActiveScene();
         if (newScene.IsValid())
@@ -48,11 +53,10 @@ public class PlayerController : MonoBehaviour
         #endregion
     }
 
-    // Update is called once per frame
     void Update()
     {
-       horizontal = Input.GetAxis("Horizontal");
-       vertical = Input.GetAxis("Vertical");
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
 
         Vector2 move = new Vector2(horizontal, vertical);
        
@@ -60,11 +64,15 @@ public class PlayerController : MonoBehaviour
         if (horizontal > 0.5 || horizontal < -0.5)
         {
             vertical = 0;
+            if (horizontal > 0.5) flashlight.transform.rotation = Quaternion.Euler(0, 0, 90);
+            if (horizontal < -0.5) flashlight.transform.rotation = Quaternion.Euler(0, 0, -90);
         }
 
         if (vertical > 0.5 || vertical < -0.5)
         {
             horizontal = 0;
+            if (vertical > 0.5) flashlight.transform.rotation = Quaternion.Euler(0, 0, 180);
+            if (vertical < -0.5) flashlight.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         #endregion
 
@@ -99,6 +107,33 @@ public class PlayerController : MonoBehaviour
        position.y = position.y + moveSpeed * vertical * Time.deltaTime;
        
        rigidbody2d.MovePosition(position); 
+    }
+
+    public void TakeDamage()
+    {
+        if (isInvulnerable) return;
+        else Health = Health - 1;
+
+        if (Health <= 0) // Player Death
+        {
+            Health = 0;
+            Destroy(this);
+            Debug.LogError("You are dead");
+            return;
+        }
+        
+        StartCoroutine(InvulnerabilityFrames());
+    }    
+
+    private IEnumerator InvulnerabilityFrames()
+    {
+        Debug.Log("Player is invulnerable");
+        isInvulnerable = true;
+
+        yield return new WaitForSeconds(invulnerablityDurationSeconds);
+
+        isInvulnerable = false;
+        Debug.Log("Player is no longer invulnerable");
     }
 
 }

@@ -12,6 +12,7 @@ public class EnemyController : MonoBehaviour
     float horizontal;
     float vertical;
     private Transform target;
+    private PlayerController Player;
     
     // Start is called before the first frame update
     void Start()
@@ -50,5 +51,10 @@ public class EnemyController : MonoBehaviour
        position.y = position.y + moveSpeed * vertical * Time.deltaTime;
        
        rigidbody2d.MovePosition(position);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player") Player.TakeDamage(); // CURRENTLY DEFUNCT
     }
 }
