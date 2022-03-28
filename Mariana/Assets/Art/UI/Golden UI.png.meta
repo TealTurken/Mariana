@@ -1,0 +1,1701 @@
+fileFormatVersion: 2
+guid: af6966da07972f449b0867e6d4bb6c3d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1348691806210712596
+    second: Golden UI_14
+  - first:
+      213: -6628103082057320287
+    second: Golden UI_0
+  - first:
+      213: 3078635908297703969
+    second: Golden UI_1
+  - first:
+      213: -555984069648270719
+    second: Golden UI_2
+  - first:
+      213: -7058061647712785457
+    second: Golden UI_3
+  - first:
+      213: 989629944673886434
+    second: Golden UI_4
+  - first:
+      213: -799262917720154896
+    second: Golden UI_5
+  - first:
+      213: -4388426578114905967
+    second: Golden UI_6
+  - first:
+      213: -2273050595131928495
+    second: Golden UI_7
+  - first:
+      213: -2820328857870186524
+    second: Golden UI_8
+  - first:
+      213: -4474136452689840966
+    second: Golden UI_9
+  - first:
+      213: -5437648785584773579
+    second: Golden UI_10
+  - first:
+      213: -6817789904551064843
+    second: Golden UI_11
+  - first:
+      213: -1457482460079338020
+    second: Golden UI_12
+  - first:
+      213: -4548577693438988549
+    second: Golden UI_13
+  - first:
+      213: -355085601343265619
+    second: Golden UI_15
+  - first:
+      213: -9119394092147599450
+    second: Golden UI_16
+  - first:
+      213: 2470481453224278672
+    second: Golden UI_17
+  - first:
+      213: -318036111534328805
+    second: Golden UI_18
+  - first:
+      213: 2977284583143525323
+    second: Golden UI_19
+  - first:
+      213: 1989848697367143043
+    second: Golden UI_20
+  - first:
+      213: 5872236984344558254
+    second: Golden UI_21
+  - first:
+      213: -802836060867363994
+    second: Golden UI_22
+  - first:
+      213: 5733484005575194411
+    second: Golden UI_23
+  - first:
+      213: 7919778962906159969
+    second: Golden UI_24
+  - first:
+      213: -1920734846409976569
+    second: Golden UI_25
+  - first:
+      213: 2018476689686972234
+    second: Golden UI_26
+  - first:
+      213: 1875014675869604256
+    second: Golden UI_27
+  - first:
+      213: -3570427890142604946
+    second: Golden UI_28
+  - first:
+      213: 7186608713566960363
+    second: Golden UI_29
+  - first:
+      213: -7429358078791475182
+    second: Golden UI_30
+  - first:
+      213: 1215211406900745610
+    second: Golden UI_31
+  - first:
+      213: -5199669190398315712
+    second: Golden UI_32
+  - first:
+      213: 3099258766258056997
+    second: Golden UI_33
+  - first:
+      213: 4984297233580505248
+    second: Golden UI_34
+  - first:
+      213: -654197720145987447
+    second: Golden UI_35
+  - first:
+      213: -5409082170680502928
+    second: Golden UI_36
+  - first:
+      213: -1468032006515433690
+    second: Golden UI_37
+  - first:
+      213: -755573191865033768
+    second: Golden UI_38
+  - first:
+      213: -329684166387930658
+    second: Golden UI_39
+  - first:
+      213: -3072012199934130161
+    second: Golden UI_40
+  - first:
+      213: -2604615865418194447
+    second: Golden UI_41
+  - first:
+      213: -5296728839875653225
+    second: Golden UI_42
+  - first:
+      213: -4807834199941917660
+    second: Golden UI_43
+  - first:
+      213: 127096270619537853
+    second: Golden UI_44
+  - first:
+      213: 4471035199500610405
+    second: Golden UI_45
+  - first:
+      213: -7497896556750320093
+    second: Golden UI_46
+  - first:
+      213: 6868459089971811191
+    second: Golden UI_47
+  - first:
+      213: 7653848653539373118
+    second: Golden UI_48
+  - first:
+      213: -5612322880697751936
+    second: Golden UI_49
+  - first:
+      213: 1362991052688442988
+    second: Golden UI_50
+  - first:
+      213: -4344056535116727765
+    second: Golden UI_51
+  - first:
+      213: -8521572024409573018
+    second: Golden UI_52
+  - first:
+      213: -5806525593696482957
+    second: Golden UI_53
+  - first:
+      213: -4382634615409300662
+    second: Golden UI_54
+  - first:
+      213: 801185569838369072
+    second: Golden UI_55
+  - first:
+      213: 8779425558948761558
+    second: Golden UI_56
+  - first:
+      213: -4898953274677412142
+    second: Golden UI_57
+  - first:
+      213: 266484119293615114
+    second: Golden UI_58
+  - first:
+      213: -2830782219132653536
+    second: Golden UI_59
+  - first:
+      213: -2922986649337715920
+    second: Golden UI_60
+  - first:
+      213: -2146855267184169507
+    second: Golden UI_61
+  - first:
+      213: -6642936642667439694
+    second: Golden UI_62
+  - first:
+      213: 1337576789086185728
+    second: Golden UI_63
+  - first:
+      213: -881046037638092537
+    second: Golden UI_64
+  - first:
+      213: -4908404267107498874
+    second: Golden UI_65
+  - first:
+      213: 8418521320590399158
+    second: Golden UI_66
+  - first:
+      213: -4944879441893593923
+    second: Golden UI_67
+  - first:
+      213: -6290915813811294101
+    second: Golden UI_68
+  - first:
+      213: 8062641676934511294
+    second: Golden UI_69
+  - first:
+      213: 5048005138192175287
+    second: Golden UI_70
+  - first:
+      213: -7870186852360653170
+    second: Golden UI_71
+  - first:
+      213: -2824138260787594833
+    second: Golden UI_72
+  - first:
+      213: 2011661686204972658
+    second: Golden UI_73
+  - first:
+      213: -3431203278159317396
+    second: Golden UI_74
+  - first:
+      213: 2067550435076280558
+    second: Golden UI_75
+  - first:
+      213: 368231175529893774
+    second: Golden UI_76
+  - first:
+      213: -3634779393384770982
+    second: Golden UI_77
+  - first:
+      213: 372373796152319628
+    second: Golden UI_78
+  - first:
+      213: 8648803983330176980
+    second: Golden UI_79
+  - first:
+      213: 5626890453359203130
+    second: Golden UI_80
+  - first:
+      213: -5015243320428377960
+    second: Golden UI_81
+  - first:
+      213: 3540948214643655413
+    second: Golden UI_82
+  - first:
+      213: 7091838938869987976
+    second: Golden UI_83
+  - first:
+      213: -2532039737293427116
+    second: Golden UI_84
+  - first:
+      213: -3036639778318817452
+    second: Golden UI_85
+  - first:
+      213: -3613960736214527170
+    second: Golden UI_86
+  - first:
+      213: 6460302958937119113
+    second: Golden UI_87
+  - first:
+      213: 8484613471083815774
+    second: Golden UI_88
+  - first:
+      213: -3662434822687172791
+    second: Golden UI_89
+  - first:
+      213: 4428945780418548355
+    second: Golden UI_90
+  - first:
+      213: 2759171199741523895
+    second: Golden UI_91
+  - first:
+      213: 71901295329550506
+    second: Golden UI_92
+  - first:
+      213: 972195985427049206
+    second: Golden UI_93
+  - first:
+      213: -1897303840773720568
+    second: Golden UI_94
+  - first:
+      213: 429804377564851528
+    second: Golden UI_95
+  - first:
+      213: 3656166172085214359
+    second: Golden UI_96
+  - first:
+      213: -6808151100659067778
+    second: Golden UI_97
+  - first:
+      213: 2218212212366463484
+    second: Golden UI_98
+  - first:
+      213: 1872340949354369941
+    second: Golden UI_99
+  - first:
+      213: -7422366584000425474
+    second: Golden UI_100
+  - first:
+      213: 1382980606684548852
+    second: Golden UI_101
+  - first:
+      213: 7798491517544796899
+    second: Golden UI_102
+  - first:
+      213: 5759944571590592305
+    second: Golden UI_103
+  - first:
+      213: 767599052261686662
+    second: Golden UI_104
+  - first:
+      213: -7498740637643798996
+    second: Golden UI_105
+  - first:
+      213: -6649406542030344890
+    second: Golden UI_106
+  - first:
+      213: 2355896448056080081
+    second: Golden UI_107
+  - first:
+      213: -1771655220145414506
+    second: Golden UI_108
+  - first:
+      213: 3286539327342265299
+    second: Golden UI_109
+  - first:
+      213: 8048775203135574138
+    second: Golden UI_110
+  - first:
+      213: -5526957709905435492
+    second: Golden UI_111
+  - first:
+      213: -7898252535082488853
+    second: Golden UI_112
+  - first:
+      213: 195686919959226815
+    second: Golden UI_113
+  - first:
+      213: -8765081054877952474
+    second: Golden UI_114
+  - first:
+      213: -5351678805663796443
+    second: Golden UI_115
+  - first:
+      213: 3314974352370228163
+    second: Golden UI_116
+  - first:
+      213: -2346662121005064363
+    second: Golden UI_117
+  - first:
+      213: -5344279484481383096
+    second: Golden UI_118
+  - first:
+      213: 3185721749333981039
+    second: Golden UI_119
+  - first:
+      213: -5503654030087640375
+    second: Golden UI_120
+  - first:
+      213: -2191937346821392380
+    second: Golden UI_121
+  - first:
+      213: 4768641855259612022
+    second: Golden UI_122
+  - first:
+      213: 3071321415649291274
+    second: Golden UI_123
+  - first:
+      213: 5256756248035874347
+    second: Golden UI_124
+  - first:
+      213: -2165520228733653320
+    second: Golden UI_125
+  - first:
+      213: 340867764190764836
+    second: Golden UI_126
+  - first:
+      213: 1142054622716715345
+    second: Golden UI_127
+  - first:
+      213: 835903797536125457
+    second: Golden UI_128
+  - first:
+      213: 6828421460889225109
+    second: Golden UI_129
+  - first:
+      213: 1968585415934526229
+    second: Golden UI_130
+  - first:
+      213: 2654972711375531589
+    second: Golden UI_131
+  - first:
+      213: -2643979133748985645
+    second: Golden UI_132
+  - first:
+      213: -4260898674739444461
+    second: Golden UI_133
+  - first:
+      213: -7385113249796814671
+    second: Golden UI_134
+  - first:
+      213: -7874077448789222446
+    second: Golden UI_135
+  - first:
+      213: 1354803516515771360
+    second: Golden UI_136
+  - first:
+      213: -5859516099211744198
+    second: Golden UI_137
+  - first:
+      213: -1493155279218374136
+    second: Golden UI_138
+  - first:
+      213: -456027117224307145
+    second: Golden UI_139
+  - first:
+      213: -1530829309091153412
+    second: Golden UI_140
+  - first:
+      213: -288919571789936498
+    second: Golden UI_141
+  - first:
+      213: -3984990586957045318
+    second: Golden UI_142
+  - first:
+      213: 8508332588888380424
+    second: Golden UI_143
+  - first:
+      213: 5245652462995980360
+    second: Golden UI_144
+  - first:
+      213: -1954880407275404458
+    second: Golden UI_145
+  - first:
+      213: 5506827051750037686
+    second: Golden UI_146
+  - first:
+      213: 606308259494001540
+    second: Golden UI_147
+  - first:
+      213: -7817736778873212225
+    second: Golden UI_148
+  - first:
+      213: 2923392852201069743
+    second: Golden UI_149
+  - first:
+      213: 874741254768650162
+    second: Golden UI_150
+  - first:
+      213: -3155868013501271583
+    second: Golden UI_151
+  - first:
+      213: -2597804506989930908
+    second: Golden UI_152
+  - first:
+      213: -1828724099436775396
+    second: Golden UI_153
+  - first:
+      213: -282439575594676348
+    second: Golden UI_154
+  - first:
+      213: -6487198841503943916
+    second: Golden UI_155
+  - first:
+      213: -7184152072501718130
+    second: Golden UI_156
+  - first:
+      213: 2387530694519649624
+    second: Golden UI_157
+  - first:
+      213: 114741815036023997
+    second: Golden UI_158
+  - first:
+      213: 5984120387266883277
+    second: Golden UI_159
+  - first:
+      213: -8032440672212398248
+    second: Golden UI_160
+  - first:
+      213: 8302232855899641494
+    second: Golden UI_161
+  - first:
+      213: 892042834339029293
+    second: Golden UI_162
+  - first:
+      213: 4518794668652893263
+    second: Golden UI_163
+  - first:
+      213: 6303437789820240343
+    second: Golden UI_164
+  - first:
+      213: -8404782369517941663
+    second: Golden UI_165
+  - first:
+      213: -5550830924762696390
+    second: Golden UI_166
+  - first:
+      213: 5726508534083773031
+    second: Golden UI_167
+  - first:
+      213: -7160602148637233272
+    second: Golden UI_168
+  - first:
+      213: 8840265396770275581
+    second: Golden UI_169
+  - first:
+      213: 6515491591908204824
+    second: Golden UI_170
+  - first:
+      213: -1810708460690578278
+    second: Golden UI_171
+  - first:
+      213: 1457450360475370250
+    second: Golden UI_172
+  - first:
+      213: 1724947411991485059
+    second: Golden UI_173
+  - first:
+      213: 7387543091712109851
+    second: Golden UI_174
+  - first:
+      213: -2612700036553398847
+    second: Golden UI_175
+  - first:
+      213: -5342104269982453344
+    second: Golden UI_176
+  - first:
+      213: 3183545960193602604
+    second: Golden UI_177
+  - first:
+      213: -7113201604378119464
+    second: Golden UI_178
+  - first:
+      213: -8597010957126326373
+    second: Golden UI_179
+  - first:
+      213: -5971732679384668875
+    second: Golden UI_180
+  - first:
+      213: 3119338776334159509
+    second: Golden UI_181
+  - first:
+      213: 497326989338391329
+    second: Golden UI_182
+  - first:
+      213: -9121994094580011800
+    second: Golden UI_183
+  - first:
+      213: -1177916050612842766
+    second: Golden UI_184
+  - first:
+      213: -605298768057824368
+    second: Golden UI_185
+  - first:
+      213: -1321981379256623879
+    second: Golden UI_186
+  - first:
+      213: -7619294082516106432
+    second: Golden UI_187
+  - first:
+      213: 2991500791677389190
+    second: Golden UI_188
+  - first:
+      213: -483834568475163623
+    second: Golden UI_189
+  - first:
+      213: 8233728461899045619
+    second: Golden UI_190
+  - first:
+      213: 4556232732107331053
+    second: Golden UI_191
+  - first:
+      213: -1300133188955633768
+    second: Golden UI_192
+  - first:
+      213: 6504378765038174381
+    second: Golden UI_193
+  - first:
+      213: 1332712019554781160
+    second: Golden UI_194
+  - first:
+      213: 2467323612198372620
+    second: Golden UI_195
+  - first:
+      213: 2395497268315914929
+    second: Golden UI_196
+  - first:
+      213: 8826636625603252295
+    second: Golden UI_197
+  - first:
+      213: 7933107433642360634
+    second: Golden UI_198
+  - first:
+      213: 3983894917042271952
+    second: Golden UI_199
+  - first:
+      213: -5742287396389034817
+    second: Golden UI_200
+  - first:
+      213: -7011581806349244835
+    second: Golden UI_201
+  - first:
+      213: -6490116941080717507
+    second: Golden UI_202
+  - first:
+      213: 6493082053383995150
+    second: Golden UI_203
+  - first:
+      213: 5801197819505279229
+    second: Golden UI_204
+  - first:
+      213: 7885868865681105159
+    second: Golden UI_205
+  - first:
+      213: -6226115091422057242
+    second: Golden UI_206
+  - first:
+      213: 3116221925726361931
+    second: Golden UI_207
+  - first:
+      213: 8919144278000339688
+    second: Golden UI_208
+  - first:
+      213: 1187446508833374418
+    second: Golden UI_209
+  - first:
+      213: -248562713137852256
+    second: Golden UI_210
+  - first:
+      213: 418148930175196317
+    second: Golden UI_211
+  - first:
+      213: -4365915632990768650
+    second: Golden UI_212
+  - first:
+      213: -8533918529857854339
+    second: Golden UI_213
+  - first:
+      213: -2889297403584301759
+    second: Golden UI_214
+  - first:
+      213: -3926395545866860285
+    second: Golden UI_215
+  - first:
+      213: 8972317437028631749
+    second: Golden UI_216
+  - first:
+      213: -3516711983136525152
+    second: Golden UI_217
+  - first:
+      213: -2157356426074738473
+    second: Golden UI_218
+  - first:
+      213: -4496432210195951083
+    second: Golden UI_219
+  - first:
+      213: 946070592428057789
+    second: Golden UI_220
+  - first:
+      213: 5389023136507167242
+    second: Golden UI_221
+  - first:
+      213: -2102547535296599973
+    second: Golden UI_222
+  - first:
+      213: 8070406330728688953
+    second: Golden UI_223
+  - first:
+      213: 5735027056839787280
+    second: Golden UI_224
+  - first:
+      213: 1097390729372138884
+    second: Golden UI_225
+  - first:
+      213: 6950444133470150275
+    second: Golden UI_226
+  - first:
+      213: -2065550751623048734
+    second: Golden UI_227
+  - first:
+      213: 4870689257625585740
+    second: Golden UI_228
+  - first:
+      213: 8798017839470246067
+    second: Golden UI_229
+  - first:
+      213: 212091448198045734
+    second: Golden UI_230
+  - first:
+      213: 1826746615389888365
+    second: Golden UI_231
+  - first:
+      213: 6354314908217521289
+    second: Golden UI_232
+  - first:
+      213: 4443502290576488132
+    second: Golden UI_233
+  - first:
+      213: -4135623280199053083
+    second: Golden UI_234
+  - first:
+      213: 7077682415429900689
+    second: Golden UI_235
+  - first:
+      213: 374682424543157070
+    second: Golden UI_236
+  - first:
+      213: -1275969897046851078
+    second: Golden UI_237
+  - first:
+      213: 6628617053024197106
+    second: Golden UI_238
+  - first:
+      213: 3886835846841106501
+    second: Golden UI_239
+  - first:
+      213: 5962858551085730478
+    second: Golden UI_240
+  - first:
+      213: 1992532509016095147
+    second: Golden UI_241
+  - first:
+      213: -3940181896948321527
+    second: Golden UI_242
+  - first:
+      213: 3186437445183874784
+    second: Golden UI_243
+  - first:
+      213: 7250566272105010300
+    second: Golden UI_244
+  - first:
+      213: -293174493513289152
+    second: Golden UI_245
+  - first:
+      213: 6996489542935379387
+    second: Golden UI_246
+  - first:
+      213: 5390809107660298128
+    second: Golden UI_247
+  - first:
+      213: -6680291657593228255
+    second: Golden UI_248
+  - first:
+      213: 281733291988755245
+    second: Golden UI_249
+  - first:
+      213: 6970777288328753020
+    second: Golden UI_250
+  - first:
+      213: 8263191352207512703
+    second: Golden UI_251
+  - first:
+      213: -1480328726202853623
+    second: Golden UI_252
+  - first:
+      213: -4693544002890987940
+    second: Golden UI_253
+  - first:
+      213: 2098647876072747636
+    second: Golden UI_254
+  - first:
+      213: -415561514954331732
+    second: Golden UI_255
+  - first:
+      213: -4003930751493244755
+    second: Golden UI_256
+  - first:
+      213: -1302353488957344128
+    second: Golden UI_257
+  - first:
+      213: -2365558557440985728
+    second: Golden UI_258
+  - first:
+      213: -8285252520502863985
+    second: Golden UI_259
+  - first:
+      213: 3363320565648811759
+    second: Golden UI_260
+  - first:
+      213: 9016823859414848516
+    second: Golden UI_261
+  - first:
+      213: 3690978130777976617
+    second: Golden UI_262
+  - first:
+      213: 8543833142964328407
+    second: Golden UI_263
+  - first:
+      213: 6130742284628849209
+    second: Golden UI_264
+  - first:
+      213: -4550412123596861337
+    second: Golden UI_265
+  - first:
+      213: -4779594761439052221
+    second: Golden UI_266
+  - first:
+      213: -7454372767620147052
+    second: Golden UI_267
+  - first:
+      213: 992357045530840577
+    second: Golden UI_268
+  - first:
+      213: -8874294500171328645
+    second: Golden UI_269
+  - first:
+      213: -2515194389336329548
+    second: Golden UI_270
+  - first:
+      213: -7642479492223939710
+    second: Golden UI_271
+  - first:
+      213: -1137037046635256253
+    second: Golden UI_272
+  - first:
+      213: 384955809367166975
+    second: Golden UI_273
+  - first:
+      213: 7564389196408106152
+    second: Golden UI_274
+  - first:
+      213: -8764578404147795287
+    second: Golden UI_275
+  - first:
+      213: 742023325011579410
+    second: Golden UI_276
+  - first:
+      213: 7176071018463433478
+    second: Golden UI_277
+  - first:
+      213: -2344119811826942159
+    second: Golden UI_278
+  - first:
+      213: -8846897873779667477
+    second: Golden UI_279
+  - first:
+      213: -6711169766029175723
+    second: Golden UI_280
+  - first:
+      213: -1851702884650748819
+    second: Golden UI_281
+  - first:
+      213: -4024845131225616980
+    second: Golden UI_282
+  - first:
+      213: -6356976268531537284
+    second: Golden UI_283
+  - first:
+      213: -1538119023315623041
+    second: Golden UI_284
+  - first:
+      213: -9073233269054969704
+    second: Golden UI_285
+  - first:
+      213: -4907952006768603892
+    second: Golden UI_286
+  - first:
+      213: -8377390303396661602
+    second: Golden UI_287
+  - first:
+      213: 2534422312573937866
+    second: Golden UI_288
+  - first:
+      213: 6367775745764977028
+    second: Golden UI_289
+  - first:
+      213: 1099310715393989874
+    second: Golden UI_290
+  - first:
+      213: -6796024772545343709
+    second: Golden UI_291
+  - first:
+      213: 5582349081836198906
+    second: Golden UI_292
+  - first:
+      213: -3542498768621854491
+    second: Golden UI_293
+  - first:
+      213: 8871178434221464837
+    second: Golden UI_294
+  - first:
+      213: 6262343145870249421
+    second: Golden UI_295
+  - first:
+      213: -9199187482366983085
+    second: Golden UI_296
+  - first:
+      213: 1988801066336558379
+    second: Golden UI_297
+  - first:
+      213: -5064511887840663790
+    second: Golden UI_298
+  - first:
+      213: 7514583637768092045
+    second: Golden UI_299
+  - first:
+      213: -5830063087057807740
+    second: Golden UI_300
+  - first:
+      213: 6321263978865624911
+    second: Golden UI_301
+  - first:
+      213: 293410933667736415
+    second: Golden UI_302
+  - first:
+      213: -3083001459458864037
+    second: Golden UI_303
+  - first:
+      213: -276749570012984384
+    second: Golden UI_304
+  - first:
+      213: -146546975864834394
+    second: Golden UI_305
+  - first:
+      213: -6204806020253785866
+    second: Golden UI_306
+  - first:
+      213: 8194969066440524844
+    second: Golden UI_307
+  - first:
+      213: 3160122104099856538
+    second: Golden UI_308
+  - first:
+      213: 9056485142629387760
+    second: Golden UI_309
+  - first:
+      213: 6438896681583519917
+    second: Golden UI_310
+  - first:
+      213: -1242602497753721417
+    second: Golden UI_311
+  - first:
+      213: -7473806208945473738
+    second: Golden UI_312
+  - first:
+      213: 3209854041135856398
+    second: Golden UI_313
+  - first:
+      213: -2893877267748939625
+    second: Golden UI_314
+  - first:
+      213: 3229617010812612805
+    second: Golden UI_315
+  - first:
+      213: -8797419320525127876
+    second: Golden UI_316
+  - first:
+      213: -7522261684747701955
+    second: Golden UI_317
+  - first:
+      213: -6800687782229500073
+    second: Golden UI_318
+  - first:
+      213: 3085459383278050825
+    second: Golden UI_319
+  - first:
+      213: 4331906119219036963
+    second: Golden UI_320
+  - first:
+      213: -4888320463850056613
+    second: Golden UI_321
+  - first:
+      213: -5509443987993583185
+    second: Golden UI_322
+  - first:
+      213: 4079404280556431422
+    second: Golden UI_323
+  - first:
+      213: -7115669432717161049
+    second: Golden UI_324
+  - first:
+      213: 8309389237582236668
+    second: Golden UI_325
+  - first:
+      213: 6680970204949095151
+    second: Golden UI_326
+  - first:
+      213: -85318272684683178
+    second: Golden UI_327
+  - first:
+      213: -8702055748718822874
+    second: Golden UI_328
+  - first:
+      213: 7984501947057143189
+    second: Golden UI_329
+  - first:
+      213: -855141500635163406
+    second: Golden UI_330
+  - first:
+      213: 804257522537030477
+    second: Golden UI_331
+  - first:
+      213: -2583026921051654678
+    second: Golden UI_332
+  - first:
+      213: 8821996207322287514
+    second: Golden UI_333
+  - first:
+      213: 1405764790398385184
+    second: Golden UI_334
+  - first:
+      213: 2237030628258621306
+    second: Golden UI_335
+  - first:
+      213: -5023607021901122079
+    second: Golden UI_336
+  - first:
+      213: -949786440896404661
+    second: Golden UI_337
+  - first:
+      213: -7041368295238431784
+    second: Golden UI_338
+  - first:
+      213: -8336601478432923039
+    second: Golden UI_339
+  - first:
+      213: -2876196193184492731
+    second: Golden UI_340
+  - first:
+      213: 5223097745423576143
+    second: Golden UI_341
+  - first:
+      213: 3286117103509306299
+    second: Golden UI_342
+  - first:
+      213: -3926017795832200864
+    second: Golden UI_343
+  - first:
+      213: -4872214573433573523
+    second: Golden UI_344
+  - first:
+      213: 8586926557810514499
+    second: Golden UI_345
+  - first:
+      213: -1264624677742108624
+    second: Golden UI_346
+  - first:
+      213: -8965158383193626540
+    second: Golden UI_347
+  - first:
+      213: 6778282756158643854
+    second: Golden UI_348
+  - first:
+      213: -2387181399443275637
+    second: Golden UI_349
+  - first:
+      213: -2503805162552668140
+    second: Golden UI_350
+  - first:
+      213: 6148739045315351511
+    second: Golden UI_351
+  - first:
+      213: -7577814936683802826
+    second: Golden UI_352
+  - first:
+      213: 6574724416907657720
+    second: Golden UI_353
+  - first:
+      213: -2207639414391150273
+    second: Golden UI_354
+  - first:
+      213: -3805864912538289470
+    second: Golden UI_355
+  - first:
+      213: 5798647256317484714
+    second: Golden UI_356
+  - first:
+      213: -8787178289604175632
+    second: Golden UI_357
+  - first:
+      213: 8789525142739265776
+    second: Golden UI_358
+  - first:
+      213: -3178859824263571483
+    second: Golden UI_359
+  - first:
+      213: 7851681126275030466
+    second: Golden UI_360
+  - first:
+      213: -663897856887985834
+    second: Golden UI_361
+  - first:
+      213: -7194452684237899853
+    second: Golden UI_362
+  - first:
+      213: -2588183319850762045
+    second: Golden UI_363
+  - first:
+      213: 3109968129353631646
+    second: Golden UI_364
+  - first:
+      213: -5694530534388667014
+    second: Golden UI_365
+  - first:
+      213: 2853872120844616131
+    second: Golden UI_366
+  - first:
+      213: -3707073693067592252
+    second: Golden UI_367
+  - first:
+      213: -6993456366728086049
+    second: Golden UI_368
+  - first:
+      213: -793484512711899680
+    second: Golden UI_369
+  - first:
+      213: 8771855372247305163
+    second: Golden UI_370
+  - first:
+      213: 962369928947364727
+    second: Golden UI_371
+  - first:
+      213: -692278421137233639
+    second: Golden UI_372
+  - first:
+      213: 6920946983770945764
+    second: Golden UI_373
+  - first:
+      213: -8155671143411830702
+    second: Golden UI_374
+  - first:
+      213: -1763193734204588483
+    second: Golden UI_375
+  - first:
+      213: -1314533058546771498
+    second: Golden UI_376
+  - first:
+      213: 5168007660448982279
+    second: Golden UI_377
+  - first:
+      213: -1337189546108048699
+    second: Golden UI_378
+  - first:
+      213: 8950081019706004965
+    second: Golden UI_379
+  - first:
+      213: 4879710786128825121
+    second: Golden UI_380
+  - first:
+      213: -4622798523127563238
+    second: Golden UI_381
+  - first:
+      213: -1040905600040885392
+    second: Golden UI_382
+  - first:
+      213: 8618106085150411701
+    second: Golden UI_383
+  - first:
+      213: 6927746639184368287
+    second: Golden UI_384
+  - first:
+      213: -6299142268184652903
+    second: Golden UI_385
+  - first:
+      213: -5677041559876765301
+    second: Golden UI_386
+  - first:
+      213: -8486338909612292404
+    second: Golden UI_387
+  - first:
+      213: 5719512618230841501
+    second: Golden UI_388
+  - first:
+      213: -8489154493949225894
+    second: Golden UI_389
+  - first:
+      213: 7493736129541817015
+    second: Golden UI_390
+  - first:
+      213: 3484022429582978139
+    second: Golden UI_391
+  - first:
+      213: 1263197384176927709
+    second: Golden UI_392
+  - first:
+      213: 130661003032912091
+    second: Golden UI_393
+  - first:
+      213: 8935598073036145726
+    second: Golden UI_394
+  - first:
+      213: -191447085695935409
+    second: Golden UI_395
+  - first:
+      213: 1768584273498432908
+    second: Golden UI_396
+  - first:
+      213: -8185282557636472931
+    second: Golden UI_397
+  - first:
+      213: -466854019886612582
+    second: Golden UI_398
+  - first:
+      213: 3894203735836415860
+    second: Golden UI_399
+  - first:
+      213: 3207253640336839348
+    second: Golden UI_400
+  - first:
+      213: 8906624523138682591
+    second: Golden UI_401
+  - first:
+      213: 3488043880171849829
+    second: Golden UI_402
+  - first:
+      213: -388584174223901235
+    second: Golden UI_403
+  - first:
+      213: 1094303461036374120
+    second: Golden UI_404
+  - first:
+      213: -1516408872163523590
+    second: Golden UI_405
+  - first:
+      213: 8888727506729705531
+    second: Golden UI_406
+  - first:
+      213: 2427711269733441203
+    second: Golden UI_407
+  - first:
+      213: -455169911061024145
+    second: Golden UI_408
+  - first:
+      213: 8160528638200995413
+    second: Golden UI_409
+  - first:
+      213: 1393350858102640282
+    second: Golden UI_410
+  - first:
+      213: -5286185862087125715
+    second: Golden UI_411
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Golden UI_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 488
+        width: 218
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a83d433d5f3404a0800000000000000
+      internalID: -6628103082057320287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_1
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 448
+        width: 211
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122c8da1c0389ba20800000000000000
+      internalID: 3078635908297703969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_2
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 504
+        width: 114
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ab6d33f6fb848f0800000000000000
+      internalID: -555984069648270719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_3
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 384
+        width: 230
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb654d935abc0e90800000000000000
+      internalID: -7058061647712785457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_4
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 408
+        width: 144
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0606ff03fdbbd00800000000000000
+      internalID: 989629944673886434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 408
+        width: 83
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcd52b6c9278e4f0800000000000000
+      internalID: -799262917720154896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_6
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 448
+        width: 114
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198f390374d2913c0800000000000000
+      internalID: -4388426578114905967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_7
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 408
+        width: 343
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150dba0e6808470e0800000000000000
+      internalID: -2273050595131928495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 304
+        width: 425
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e74dd4b8dd2cd8d0800000000000000
+      internalID: -2820328857870186524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_9
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 304
+        width: 178
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4bbcce99ca8e1c0800000000000000
+      internalID: -4474136452689840966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_10
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 304
+        width: 138
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536a2e94d379984b0800000000000000
+      internalID: -5437648785584773579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_11
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 304
+        width: 66
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa4df934385261a0800000000000000
+      internalID: -6817789904551064843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 284
+        width: 685
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddcb94bc6bf5cbe0800000000000000
+      internalID: -1457482460079338020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_13
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 8
+        width: 152
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfead4defa430e0c0800000000000000
+      internalID: -4548577693438988549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 240
+        width: 59
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4146ba45d0487b210800000000000000
+      internalID: 1348691806210712596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_15
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 240
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da42413e68b721bf0800000000000000
+      internalID: -355085601343265619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_16
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 240
+        width: 59
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a71fbac367617180800000000000000
+      internalID: -9119394092147599450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

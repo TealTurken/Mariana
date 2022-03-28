@@ -21,6 +21,8 @@ public class ItemScript : MonoBehaviour
         if (interactAllowed && Input.GetKeyDown(KeyCode.E))
         {
             if (gameObject.tag == "Weapon") PickUp();
+            if (gameObject.tag == "Key") Item();
+            if (gameObject.tag == "Tool") Item();
             if (gameObject.tag == "Interactable") Operate();
         }
     }
@@ -28,7 +30,7 @@ public class ItemScript : MonoBehaviour
     {
         if(collision.collider.tag == "Player")
         {
-            if (gameObject.tag == "Weapon")
+            if (gameObject.tag == "Weapon, Tool, Key")
             {
                 itemText.SetText("Press 'E' to pick up");
             }
@@ -65,9 +67,17 @@ public class ItemScript : MonoBehaviour
         }
     }
 
+    private void Item()
+    {
+        Destroy (gameObject);
+        print ("Item picked up");
+    }
+
     private void Operate()
     {
         itemText.SetText("Working...\nFEATURE INCOMPLETE\n'to wait 3-5 seconds upon use to finish'");
     }
+
+    
     
 }
