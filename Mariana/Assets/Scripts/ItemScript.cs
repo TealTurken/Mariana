@@ -10,6 +10,7 @@ public class ItemScript : MonoBehaviour
     public TextMeshProUGUI itemText;
     private Inventory inventory;
     public GameObject itemButton;
+    public bool terminalFixed = false;
 
     private void Start() 
     {
@@ -21,24 +22,51 @@ public class ItemScript : MonoBehaviour
     {
         if (interactAllowed && Input.GetKeyDown(KeyCode.E))
         {
-            if (gameObject.tag == "Weapon") PickUp();
-            if (gameObject.tag == "Key") PickUp();
-            if (gameObject.tag == "Tool") PickUp();
-            if (gameObject.tag == "Interactable") Operate();
+            if (gameObject.tag == "Weapon") 
+            {
+                PickUp();
+            }
+
+            else if (gameObject.tag == "Key")
+            {
+                PickUp();
+            }
+
+            else if (gameObject.tag == "Tool")
+            {
+                PickUp();
+            }
+
+            else if (gameObject.tag == "Interactable")
+            {
+                Operate();
+            }
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.collider.tag == "Player")
         {
-            if (gameObject.tag == "Weapon, Tool, Key")
+            if (gameObject.tag == "Weapon")
             {
                 itemText.SetText("Press 'E' to pick up");
             }
-            if (gameObject.tag == "Interactable")
+
+            else if (gameObject.tag == "Tool")
+            {
+                itemText.SetText("Press 'E' to pick up");
+            }
+
+            else if (gameObject.tag == "Key")
+            {
+                itemText.SetText("Press 'E' to pick up");
+            }
+
+            else if (gameObject.tag == "Interactable")
             {
                 itemText.SetText("Press 'E' to use terminal");
             }
+            
             itemText.gameObject.SetActive(true);
             interactAllowed = true;
         }
@@ -76,9 +104,20 @@ public class ItemScript : MonoBehaviour
 
     private void Operate()
     {
-        itemText.SetText("Working...\nFEATURE INCOMPLETE\n'to wait 3-5 seconds upon use to finish'");
-    }
+        if (!inventory.hasTool)
+        {
+            itemText.SetText("The terminal appears to be broken...");
+        }
 
-    
-    
+        else if (inventory.hasTool && !terminalFixed)
+        {
+            itemText.SetText("The terminal is now functional!");
+            terminalFixed = true;
+        }
+
+        else if (inventory.hasTool && terminalFixed)
+        {
+            itemText.SetText("Working...\nFEATURE INCOMPLETE\n'to wait 3-5 seconds upon use to finish'");
+        }
+    }
 }
