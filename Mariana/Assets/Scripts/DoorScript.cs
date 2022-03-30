@@ -8,9 +8,22 @@ public class DoorScript : MonoBehaviour
 {
     private bool enterAllowed;
     public TextMeshProUGUI doorText;
+    private string destination;
+    public Vector3 exitPoint; // variable for where the player appears in the scene they travel to
+    private PlayerController Player;
     // Start is called before the first frame update
     void Start()
     {
+        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "Scene")
+        {
+            destination = "Water1";
+        }
+        if (currentScene.name == "Water1")
+        {
+            destination = "Scene";
+        }
         doorText.gameObject.SetActive(false);
     }
 
@@ -41,7 +54,8 @@ public class DoorScript : MonoBehaviour
     {
         if (enterAllowed && Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene("Water1");
+            Player.travelPoint = exitPoint;
+            SceneManager.LoadScene(destination);
         }
     }    
 }

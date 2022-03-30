@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
     float vertical;
     Scene newScene;
     Scene activeScene;
+    [HideInInspector]
+    public Vector3 travelPoint;
     [SerializeField]
     private float invulnerablityDurationSeconds = 3.0f;
 
@@ -55,6 +57,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        //DontDestroyOnLoad(this);
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
@@ -112,7 +115,7 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage()
     {
         if (isInvulnerable) return;
-        else Health = Health - 1;
+        else Health--;
 
         if (Health <= 0) // Player Death
         {
