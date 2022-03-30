@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class ItemScript : MonoBehaviour
@@ -21,8 +22,8 @@ public class ItemScript : MonoBehaviour
         if (interactAllowed && Input.GetKeyDown(KeyCode.E))
         {
             if (gameObject.tag == "Weapon") PickUp();
-            if (gameObject.tag == "Key") Item();
-            if (gameObject.tag == "Tool") Item();
+            if (gameObject.tag == "Key") PickUp();
+            if (gameObject.tag == "Tool") PickUp();
             if (gameObject.tag == "Interactable") Operate();
         }
     }
@@ -52,7 +53,7 @@ public class ItemScript : MonoBehaviour
         }
     }
 
-    private async void PickUp()
+    public async void PickUp()
     {
         for (int i = 0; i < inventory.slots.Length; i++)
         {
@@ -60,17 +61,17 @@ public class ItemScript : MonoBehaviour
             {
                 inventory.isFull[i] = true;
                 Instantiate(itemButton, inventory.slots[i].transform, false);
+
+                if (gameObject.tag == "Tool")
+                {
+                    inventory.hasTool = true;
+                }
+
                 Destroy (gameObject);
                 print ("Item picked up");
                 break;
             }
         }
-    }
-
-    private void Item()
-    {
-        Destroy (gameObject);
-        print ("Item picked up");
     }
 
     private void Operate()
