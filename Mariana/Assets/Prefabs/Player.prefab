@@ -341,6 +341,7 @@ MonoBehaviour:
   normalSprintSpeed: 7
   underwaterSpeed: 2
   underwaterSprintSpeed: 4.5
+  travelPoint: {x: 0, y: 0, z: 0}
   invulnerablityDurationSeconds: 3
 --- !u!114 &931147558404516563
 MonoBehaviour:
@@ -360,3 +361,4 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  hasTool: 0
