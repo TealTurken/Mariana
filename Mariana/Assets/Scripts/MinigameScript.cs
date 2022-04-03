@@ -6,58 +6,59 @@ using UnityEngine.UI;
 
 public class MinigameScript : MonoBehaviour
 {
-    public List<Button> buttons;
-    public List<Button> shuffledButtons;
-    int counter = 0;
+    public List<Button> buttons; //list of buttons
+    public List<Button> shuffledButtons; // shuffled version of this list
+    int counter = 0; // keeps track of how many buttons were pressed in sequence
+
     // Start is called before the first frame update
     void Start()
     {
-        RestartTheGame();
+        RestartTheGame(); //in the beginning just restart game session
     }
 
    public void RestartTheGame()
    {
        counter = 0;
-       shuffledButtons=buttons.OrderBy(a => Random.Range(0,100)).ToList();
+       shuffledButtons=buttons.OrderBy(a => Random.Range(0,100)).ToList(); // shuffle the buttons with random numbers from 0 too 100
        for (int i=1;i<11;i++)
        {
-           shuffledButtons[i - 1].GetComponentInChildren<Text>().text = i.ToString();
-           shuffledButtons[i - 1].interactable = true;
-           shuffledButtons[i - 1].image.color = new Color32(177,220,233,255);    
+           shuffledButtons[i - 1].GetComponentInChildren<Text>().text = i.ToString(); // set the text on buttons to correct number
+           shuffledButtons[i - 1].interactable = true; // set all buttons presentable
+           shuffledButtons[i - 1].image.color = new Color32(177,220,233,255); // our inital color
        }
    }
 
-   public void pressButton(Button button)
+   public void pressButton(Button button) // function for buttons to call on click
    {
-     if(int.Parse(button.GetComponentInChildren<Text>().text)-1==counter)
+     if(int.Parse(button.GetComponentInChildren<Text>().text)-1==counter) // check if the number on the button -1 is equal to counter so we know that this button is pressed in correct order
      {
-       counter++;
-       button.interactable = false;
-       button.image.color = Color.green;
-       if(counter==10)
+       counter++; // increases the counter
+       button.interactable = false; // disables the button
+       button.image.color = Color.green; // sets color to green when correct
+       if(counter==10) // check if all buttons are pressed already
        {
-           StartCoroutine(presentResult(true));
+           StartCoroutine(presentResult(true)); // present result for winning
        }
      }
      else
      {
-         StartCoroutine(presentResult(false));
+         StartCoroutine(presentResult(false)); // in case the button was not pressed in correct sequence- present result for losing
      }
        
    }
 
-   public IEnumerator presentResult(bool win)
+   public IEnumerator presentResult(bool win) // coroutine for game result presentation
    {
-       if(!win)
+       if(!win) // if player lost
        {
            foreach(var button in shuffledButtons)
            {
-               button.image.color = Color.red;
-               button.interactable = false;
+               button.image.color = Color.red; // set colors of all buttons to red
+               button.interactable = false; // set all buttons to noninteractable state
            }
        } 
-      yield return new WaitForSeconds(2f);
-      RestartTheGame();
+      yield return new WaitForSeconds(2f); // wait for 2 seconds so player can see the result
+      RestartTheGame(); // restarts the game again
    }
    
 }
