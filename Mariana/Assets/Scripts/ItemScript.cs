@@ -11,11 +11,20 @@ public class ItemScript : MonoBehaviour
     private Inventory inventory;
     public GameObject itemButton;
     public bool terminalFixed = false;
+    AudioSource audioSource;
+    public AudioClip terminalSound;
 
     private void Start() 
     {
         itemText.gameObject.SetActive(false);
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
     
     private void Update()
@@ -100,6 +109,8 @@ public class ItemScript : MonoBehaviour
                 break;
             }
         }
+
+        
     }
 
     private void Operate()
@@ -119,5 +130,7 @@ public class ItemScript : MonoBehaviour
         {
             itemText.SetText("Working...\nFEATURE INCOMPLETE\n'to wait 3-5 seconds upon use to finish'");
         }
+
+        PlaySound(terminalSound);
     }
 }

@@ -29,9 +29,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float invulnerablityDurationSeconds = 3.0f;
 
+    AudioSource audioSource;
+
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
         flashlight = this.transform.GetChild(0).gameObject; // gets the flashlight on the player
         #region Movement speed
         newScene = SceneManager.GetActiveScene();
