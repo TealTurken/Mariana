@@ -8,6 +8,7 @@ public class ItemScript : MonoBehaviour
 {
     private bool interactAllowed;
     public TextMeshProUGUI itemText;
+    public GameObject minigameUI;
     private Inventory inventory;
     public GameObject itemButton;
     public bool terminalFixed = false;
@@ -17,6 +18,7 @@ public class ItemScript : MonoBehaviour
     private void Start() 
     {
         itemText.gameObject.SetActive(false);
+        minigameUI.SetActive(false);
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
 
         audioSource = GetComponent<AudioSource>();
@@ -86,6 +88,7 @@ public class ItemScript : MonoBehaviour
         if(collision.collider.tag == "Player")
         {
             itemText.gameObject.SetActive(false);
+            minigameUI.SetActive(false);
             interactAllowed = false;
         }
     }
@@ -128,8 +131,10 @@ public class ItemScript : MonoBehaviour
 
         else if (inventory.hasTool && terminalFixed)
         {
-            itemText.SetText("Working...\nFEATURE INCOMPLETE\n'to wait 3-5 seconds upon use to finish'");
+            minigameUI.SetActive(true);
+            itemText.gameObject.SetActive(false);
         }
+
 
         PlaySound(terminalSound);
     }
