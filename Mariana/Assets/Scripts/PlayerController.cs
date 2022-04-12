@@ -94,16 +94,6 @@ public class PlayerController : MonoBehaviour
            moveSpeed = sceneSpeed;
        }
         #endregion
-
-        if (Input.GetKey("escape"))
-            {
-                #if UNITY_EDITOR
-                    UnityEditor.EditorApplication.isPlaying = false;
-                #endif
-
-                print ("Quit");
-                Application.Quit();
-            }
     }
 
     void FixedUpdate() 
