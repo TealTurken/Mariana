@@ -15,10 +15,12 @@ GameObject:
   - component: {fileID: 2967840451772183101}
   - component: {fileID: 2967840451772183096}
   - component: {fileID: 2721294508456548581}
+  - component: {fileID: 2967840452407718143}
+  - component: {fileID: 2967840452407718150}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -148,6 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a444e3f964bb1bc4a92716f6f964a374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 2967840452407718143}
   normalSpeed: 4
   normalSprintSpeed: 7
   underwaterSpeed: 2
@@ -269,6 +272,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &2967840452407718143
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2967840451772183106}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c6421e21e7eb4584d86b22ad6a5c1ad6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2967840452407718150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2967840451772183106}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d651eb510c9585a4c8e47cbd0b512f65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rb: {fileID: 2967840451772183100}
+  animator: {fileID: 2967840452407718143}
 --- !u!1 &2967840452329802558
 GameObject:
   m_ObjectHideFlags: 0

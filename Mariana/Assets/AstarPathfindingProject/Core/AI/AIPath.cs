@@ -306,8 +306,9 @@ namespace Pathfinding {
 			interpolator.SetPath(path.vectorPath);
 
 			var graph = path.path.Count > 0 ? AstarData.GetGraph(path.path[0]) as ITransformedGraph : null;
-			movementPlane = graph != null ? graph.transform : (orientation == OrientationMode.YAxisForward ? new GraphTransform(Matrix4x4.TRS(Vector3.zero, Quaternion.Euler(-90, 270, 90), Vector3.one)) : GraphTransform.identityTransform);
-
+			var graphRotation = new Vector3(-90, 0, 0);
+			movementPlane = new GraphTransform(Matrix4x4.TRS(Vector3.zero, Quaternion.Euler(graphRotation), Vector3.one));
+			
 			// Reset some variables
 			reachedEndOfPath = false;
 

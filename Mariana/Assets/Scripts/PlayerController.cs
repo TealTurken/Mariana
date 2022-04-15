@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
+    public Animator animator;
     Vector2 movement;
     GameObject flashlight;
 
@@ -15,10 +16,12 @@ public class PlayerController : MonoBehaviour
     float Oxygen = 100;
     float moveSpeed; // actual movement speed applied to player character
     float sprintSpeed; // actual sprint speed
+    #region Level Movement Speed
     public float normalSpeed = 4.0f;
     public float normalSprintSpeed = 7.0f;
     public float underwaterSpeed = 2.0f;
     public float underwaterSprintSpeed = 4.5f;
+    #endregion levelmovementspeed
     float sceneSpeed; // retains scene movement speed when sprint speed is applied
     float horizontal;
     float vertical;
@@ -40,7 +43,7 @@ public class PlayerController : MonoBehaviour
         newScene = SceneManager.GetActiveScene();
         if (newScene.IsValid())
         {
-            if (newScene != activeScene)
+            if (newScene != activeScene) // updates movement speed between interior and exterior levels
             {
                 activeScene = newScene;
                 if (activeScene.name == "Scene")
@@ -53,6 +56,7 @@ public class PlayerController : MonoBehaviour
                     moveSpeed = underwaterSpeed; // underwater move speed
                     sprintSpeed = underwaterSprintSpeed;
                 }
+                sceneSpeed = moveSpeed;
             }
         }
         #endregion
@@ -72,6 +76,7 @@ public class PlayerController : MonoBehaviour
             vertical = 0;
             if (horizontal > 0.5) flashlight.transform.rotation = Quaternion.Euler(0, 0, 90);
             if (horizontal < -0.5) flashlight.transform.rotation = Quaternion.Euler(0, 0, -90);
+            audioSource.Play();
         }
 
         if (vertical > 0.5 || vertical < -0.5)
@@ -79,13 +84,13 @@ public class PlayerController : MonoBehaviour
             horizontal = 0;
             if (vertical > 0.5) flashlight.transform.rotation = Quaternion.Euler(0, 0, 180);
             if (vertical < -0.5) flashlight.transform.rotation = Quaternion.Euler(0, 0, 0);
+            audioSource.Play();
         }
         #endregion
 
         #region Sprint
         if (Input.GetKeyDown(KeyCode.LeftShift))
        {
-           sceneSpeed = moveSpeed;
            moveSpeed = sprintSpeed;
        }
 
