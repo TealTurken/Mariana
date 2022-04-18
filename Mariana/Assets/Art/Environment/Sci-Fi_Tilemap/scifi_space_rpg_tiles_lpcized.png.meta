@@ -357,6 +357,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2764,6 +2765,118 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      scifi_space_rpg_tiles_lpcized_37: 4006975658446136808
+      scifi_space_rpg_tiles_lpcized_74: -1654762117270339426
+      scifi_space_rpg_tiles_lpcized_52: 7789203013472000266
+      scifi_space_rpg_tiles_lpcized_80: 6075938856175327121
+      scifi_space_rpg_tiles_lpcized_21: -3410373172767476924
+      scifi_space_rpg_tiles_lpcized_105: -2652341783509714407
+      scifi_space_rpg_tiles_lpcized_49: 3324875000311472390
+      scifi_space_rpg_tiles_lpcized_11: 7401347336704020080
+      scifi_space_rpg_tiles_lpcized_77: 297112749870574836
+      scifi_space_rpg_tiles_lpcized_54: -7263487900615614410
+      scifi_space_rpg_tiles_lpcized_23: -4752872947173539861
+      scifi_space_rpg_tiles_lpcized_7: -6228442947971472054
+      scifi_space_rpg_tiles_lpcized_53: -7422585507789453336
+      scifi_space_rpg_tiles_lpcized_45: 4035183072672706905
+      scifi_space_rpg_tiles_lpcized_29: 5546367683257127608
+      scifi_space_rpg_tiles_lpcized_94: 5786920696200026939
+      scifi_space_rpg_tiles_lpcized_33: -3809115858953346818
+      scifi_space_rpg_tiles_lpcized_42: 37220188982949458
+      scifi_space_rpg_tiles_lpcized_58: -6927030877125256359
+      scifi_space_rpg_tiles_lpcized_27: 9153661053147289307
+      scifi_space_rpg_tiles_lpcized_91: -5142695828089699529
+      scifi_space_rpg_tiles_lpcized_73: -315906914132321241
+      scifi_space_rpg_tiles_lpcized_22: -2083639995012122305
+      scifi_space_rpg_tiles_lpcized_87: 5683476746062435254
+      scifi_space_rpg_tiles_lpcized_4: -7129252001285406113
+      scifi_space_rpg_tiles_lpcized_106: -2370112281155201989
+      scifi_space_rpg_tiles_lpcized_81: -2593481478695220273
+      scifi_space_rpg_tiles_lpcized_99: -2342060222215141969
+      scifi_space_rpg_tiles_lpcized_32: 1516715091941720614
+      scifi_space_rpg_tiles_lpcized_16: 8002645260121424854
+      scifi_space_rpg_tiles_lpcized_67: -2435884373877595717
+      scifi_space_rpg_tiles_lpcized_82: -8062239866855986009
+      scifi_space_rpg_tiles_lpcized_85: 7766903569042919045
+      scifi_space_rpg_tiles_lpcized_12: 7779331148281444937
+      scifi_space_rpg_tiles_lpcized_83: -6580175365285074436
+      scifi_space_rpg_tiles_lpcized_65: -8324519528087404037
+      scifi_space_rpg_tiles_lpcized_84: 1276846508989944022
+      scifi_space_rpg_tiles_lpcized_8: 3152236185283355479
+      scifi_space_rpg_tiles_lpcized_3: -135489018699793220
+      scifi_space_rpg_tiles_lpcized_62: -3872925030292294125
+      scifi_space_rpg_tiles_lpcized_9: -298903892188205140
+      scifi_space_rpg_tiles_lpcized_86: 5482729724189035037
+      scifi_space_rpg_tiles_lpcized_34: -7222911261821734492
+      scifi_space_rpg_tiles_lpcized_14: -2634053564483517450
+      scifi_space_rpg_tiles_lpcized_75: -5566704662099912056
+      scifi_space_rpg_tiles_lpcized_110: 7130495904038351985
+      scifi_space_rpg_tiles_lpcized_61: -433397102049590484
+      scifi_space_rpg_tiles_lpcized_26: -1758972354342086943
+      scifi_space_rpg_tiles_lpcized_95: 2080734369880483207
+      scifi_space_rpg_tiles_lpcized_5: 3891014725160565991
+      scifi_space_rpg_tiles_lpcized_68: -3630017407620904342
+      scifi_space_rpg_tiles_lpcized_17: -5404843867271189178
+      scifi_space_rpg_tiles_lpcized_30: 1626950934545163513
+      scifi_space_rpg_tiles_lpcized_72: -8173706326842182681
+      scifi_space_rpg_tiles_lpcized_108: -5429679778277890855
+      scifi_space_rpg_tiles_lpcized_31: -6163014638606504250
+      scifi_space_rpg_tiles_lpcized_89: -225391981000679493
+      scifi_space_rpg_tiles_lpcized_92: -4073667831077634870
+      scifi_space_rpg_tiles_lpcized_44: 7695672731185814835
+      scifi_space_rpg_tiles_lpcized_60: -1030583102862786732
+      scifi_space_rpg_tiles_lpcized_71: -5818099419682096151
+      scifi_space_rpg_tiles_lpcized_20: -4246943630575893473
+      scifi_space_rpg_tiles_lpcized_59: 9168649223014474040
+      scifi_space_rpg_tiles_lpcized_46: 7829257238290619782
+      scifi_space_rpg_tiles_lpcized_78: -306800715145625214
+      scifi_space_rpg_tiles_lpcized_15: 212681748210249496
+      scifi_space_rpg_tiles_lpcized_64: 7949509556372730372
+      scifi_space_rpg_tiles_lpcized_98: 8810298860069325522
+      scifi_space_rpg_tiles_lpcized_24: 7685898277506944653
+      scifi_space_rpg_tiles_lpcized_43: 3299353538071285458
+      scifi_space_rpg_tiles_lpcized_1: -8938653357429290570
+      scifi_space_rpg_tiles_lpcized_63: -508163303549156542
+      scifi_space_rpg_tiles_lpcized_57: 8706724271276122238
+      scifi_space_rpg_tiles_lpcized_69: -6043216507337993205
+      scifi_space_rpg_tiles_lpcized_76: -1388935107847962785
+      scifi_space_rpg_tiles_lpcized_88: -6909256799036493097
+      scifi_space_rpg_tiles_lpcized_79: 6651780610840315465
+      scifi_space_rpg_tiles_lpcized_39: 5979206010133506608
+      scifi_space_rpg_tiles_lpcized_55: -4697124088637915462
+      scifi_space_rpg_tiles_lpcized_100: -5789898246783374611
+      scifi_space_rpg_tiles_lpcized_38: -8162955566185146177
+      scifi_space_rpg_tiles_lpcized_19: -150859019219144683
+      scifi_space_rpg_tiles_lpcized_107: 5393804693802667512
+      scifi_space_rpg_tiles_lpcized_13: -4115362259587872504
+      scifi_space_rpg_tiles_lpcized_50: -1644596308667730775
+      scifi_space_rpg_tiles_lpcized_70: 4901575790568704711
+      scifi_space_rpg_tiles_lpcized_56: 5879062979602651723
+      scifi_space_rpg_tiles_lpcized_10: 8136532910472758745
+      scifi_space_rpg_tiles_lpcized_28: 4165782306033088470
+      scifi_space_rpg_tiles_lpcized_41: 5395471317924603034
+      scifi_space_rpg_tiles_lpcized_66: -6586216954687967308
+      scifi_space_rpg_tiles_lpcized_97: -3600257643569736255
+      scifi_space_rpg_tiles_lpcized_6: -1801590094180794167
+      scifi_space_rpg_tiles_lpcized_102: -3664219792424999492
+      scifi_space_rpg_tiles_lpcized_90: -8046427866465640253
+      scifi_space_rpg_tiles_lpcized_18: 562519094109017960
+      scifi_space_rpg_tiles_lpcized_48: -1181978048807743313
+      scifi_space_rpg_tiles_lpcized_101: 4752786422811961627
+      scifi_space_rpg_tiles_lpcized_0: 7038570272862576137
+      scifi_space_rpg_tiles_lpcized_109: -6321987044297356687
+      scifi_space_rpg_tiles_lpcized_36: -1691072207346783532
+      scifi_space_rpg_tiles_lpcized_93: 6536450559393925107
+      scifi_space_rpg_tiles_lpcized_2: 373484481915501261
+      scifi_space_rpg_tiles_lpcized_51: 111594099646171988
+      scifi_space_rpg_tiles_lpcized_96: -2194206358490257929
+      scifi_space_rpg_tiles_lpcized_103: 9099959357813478480
+      scifi_space_rpg_tiles_lpcized_47: -2180756602309129033
+      scifi_space_rpg_tiles_lpcized_35: 2121224713813830208
+      scifi_space_rpg_tiles_lpcized_25: -8682719050053243873
+      scifi_space_rpg_tiles_lpcized_40: -3338764969998504208
+      scifi_space_rpg_tiles_lpcized_104: -4748814063788175129
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

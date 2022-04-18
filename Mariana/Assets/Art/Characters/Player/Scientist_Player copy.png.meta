@@ -60,6 +60,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -388,6 +389,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Scientist_Player copy_10: -6590403022251240522
+      Scientist_Player copy_4: -8530310577442767507
+      Scientist_Player copy_3: 2646295638132311688
+      Scientist_Player copy_2: 652614431754489368
+      Scientist_Player copy_8: -3425551993984657623
+      Scientist_Player copy_6: -8212478988941926964
+      Scientist_Player copy_7: -6746281553867348509
+      Scientist_Player copy_11: -6664944042330719425
+      Scientist_Player copy_1: -172140129717233896
+      Scientist_Player copy_5: 7005381638499741358
+      Scientist_Player copy_0: 6101206545400862813
+      Scientist_Player copy_9: -6332624742480439824
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

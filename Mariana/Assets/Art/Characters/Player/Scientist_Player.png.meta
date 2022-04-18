@@ -279,6 +279,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2140,6 +2141,92 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Other_Scientist_Placeholder_74: 2272084716661244103
+      Other_Scientist_Placeholder_11: -156955539770590372
+      Other_Scientist_Placeholder_60: -4836548549297595099
+      Other_Scientist_Placeholder_52: 6496931377824584674
+      Other_Scientist_Placeholder_27: 9063259042049832888
+      Other_Scientist_Placeholder_31: 6650662521288905043
+      Other_Scientist_Placeholder_65: 792353570324205751
+      Other_Scientist_Placeholder_77: 3957347295657154906
+      Other_Scientist_Placeholder_26: -928728539992307962
+      Other_Scientist_Placeholder_6: -6615738578713442906
+      Other_Scientist_Placeholder_46: -2823826506310134628
+      Other_Scientist_Placeholder_53: 7450296370208452357
+      Other_Scientist_Placeholder_21: 7276437755102501964
+      Other_Scientist_Placeholder_32: -7232553159799585224
+      Other_Scientist_Placeholder_72: -8701556007966325699
+      Other_Scientist_Placeholder_14: 4065994312223919034
+      Other_Scientist_Placeholder_58: -5578040920584629708
+      Other_Scientist_Placeholder_35: 3739561991586772304
+      Other_Scientist_Placeholder_59: -2493104493508498186
+      Other_Scientist_Placeholder_64: -4573433613180406764
+      Other_Scientist_Placeholder_39: -8470620642127958000
+      Other_Scientist_Placeholder_1: -878484939205392992
+      Other_Scientist_Placeholder_51: -2088759862387283818
+      Other_Scientist_Placeholder_56: 8425959794657877717
+      Other_Scientist_Placeholder_16: -8076637686668068003
+      Other_Scientist_Placeholder_37: 2548990035210447405
+      Other_Scientist_Placeholder_17: -7443255925795524434
+      Other_Scientist_Placeholder_28: 4834226637243980659
+      Other_Scientist_Placeholder_48: 1529450399894478575
+      Other_Scientist_Placeholder_8: 4620008356342246636
+      Other_Scientist_Placeholder_15: -7403384745043254587
+      Other_Scientist_Placeholder_13: -6373809876132811710
+      Other_Scientist_Placeholder_25: 6926207521754333057
+      Other_Scientist_Placeholder_62: 5093832714470679812
+      Other_Scientist_Placeholder_0: -4943114349764581897
+      Other_Scientist_Placeholder_10: -4250605900066171991
+      Other_Scientist_Placeholder_9: 8317433977382805105
+      Other_Scientist_Placeholder_42: 2097446302826268137
+      Other_Scientist_Placeholder_47: 565236642300292184
+      Other_Scientist_Placeholder_57: -7795187380137226939
+      Other_Scientist_Placeholder_63: -3800175894908447378
+      Other_Scientist_Placeholder_2: -2494055387371868431
+      Other_Scientist_Placeholder_29: -3313760474419426885
+      Other_Scientist_Placeholder_4: 1116300162351891428
+      Other_Scientist_Placeholder_44: -5905578879711920205
+      Other_Scientist_Placeholder_34: -651706180895437093
+      Other_Scientist_Placeholder_70: 7693578200543320278
+      Other_Scientist_Placeholder_75: 6001080937291410956
+      Other_Scientist_Placeholder_50: -4513570822724784071
+      Other_Scientist_Placeholder_83: 9169498839976917559
+      Other_Scientist_Placeholder_81: -5029698961143605020
+      Other_Scientist_Placeholder_80: 7871364170445758532
+      Other_Scientist_Placeholder_45: 5976211670109219762
+      Other_Scientist_Placeholder_40: -1297746542858537632
+      Other_Scientist_Placeholder_36: 6164958247966649470
+      Other_Scientist_Placeholder_41: -6015459406665226310
+      Other_Scientist_Placeholder_84: -6056275316070874275
+      Other_Scientist_Placeholder_69: 6620690694839612820
+      Other_Scientist_Placeholder_82: 8665301892927839805
+      Other_Scientist_Placeholder_7: 351170473094435567
+      Other_Scientist_Placeholder_12: -8992005802078340885
+      Other_Scientist_Placeholder_79: 2007418592019846870
+      Other_Scientist_Placeholder_55: 4009257374141625050
+      Other_Scientist_Placeholder_19: -6073930514573230261
+      Other_Scientist_Placeholder_20: -818051884416351964
+      Other_Scientist_Placeholder_43: 873529937063386105
+      Other_Scientist_Placeholder_54: 5381139798925352342
+      Other_Scientist_Placeholder_68: -6759855179174913812
+      Other_Scientist_Placeholder_18: -1019422365834312292
+      Other_Scientist_Placeholder_23: -1562746856877006315
+      Other_Scientist_Placeholder_22: -3940690392388583833
+      Other_Scientist_Placeholder_78: 4973014477516012082
+      Other_Scientist_Placeholder_30: 1637505227113009703
+      Other_Scientist_Placeholder_5: 6277395733072423409
+      Other_Scientist_Placeholder_33: 5471159055349500232
+      Other_Scientist_Placeholder_24: 2162226259671750007
+      Other_Scientist_Placeholder_67: 3008968502616790226
+      Other_Scientist_Placeholder_3: 1504139141143335700
+      Other_Scientist_Placeholder_66: 4928879527260446996
+      Other_Scientist_Placeholder_49: -3355578430508888016
+      Other_Scientist_Placeholder_76: 3908091561470749409
+      Other_Scientist_Placeholder_73: -1213353810511347532
+      Other_Scientist_Placeholder_38: 2472395421476072447
+      Other_Scientist_Placeholder_61: -7623823617307958905
+      Other_Scientist_Placeholder_71: -3396892899908696476
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

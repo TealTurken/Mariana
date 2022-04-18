@@ -42,6 +42,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -244,6 +245,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      creature-swim-up-Sheet_3: 4968929788155628447
+      creature-swim-up-Sheet_2: 8066897811754307254
+      creature-swim-up-Sheet_4: -5348883340385858238
+      creature-swim-up-Sheet_5: -347959634359661669
+      creature-swim-up-Sheet_1: -6277833521171659947
+      creature-swim-up-Sheet_0: -973841963056430417
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

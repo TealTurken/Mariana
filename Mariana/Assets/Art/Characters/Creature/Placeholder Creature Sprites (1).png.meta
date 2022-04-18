@@ -87,6 +87,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -604,6 +605,28 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Placeholder Creature Sprites (1)_11: 8678456497206609148
+      Placeholder Creature Sprites (1)_7: -1668584794849618376
+      Placeholder Creature Sprites (1)_12: -236007298030961308
+      Placeholder Creature Sprites (1)_19: 5859480868298901430
+      Placeholder Creature Sprites (1)_0: -2443626291162255020
+      Placeholder Creature Sprites (1)_9: -6310287343744966873
+      Placeholder Creature Sprites (1)_3: 9153588831898919719
+      Placeholder Creature Sprites (1)_15: 6902054229170804911
+      Placeholder Creature Sprites (1)_6: -5828776428945186655
+      Placeholder Creature Sprites (1)_20: -7565940231060347931
+      Placeholder Creature Sprites (1)_8: 4810724972963335508
+      Placeholder Creature Sprites (1)_2: -5140017421287195
+      Placeholder Creature Sprites (1)_18: 1109527093748631503
+      Placeholder Creature Sprites (1)_14: 3658707558464466804
+      Placeholder Creature Sprites (1)_16: -3151738755873834621
+      Placeholder Creature Sprites (1)_1: 9072216780881894158
+      Placeholder Creature Sprites (1)_5: -8601636080321495327
+      Placeholder Creature Sprites (1)_10: 1899518462684572327
+      Placeholder Creature Sprites (1)_13: -495497964511901422
+      Placeholder Creature Sprites (1)_4: -6688197299117843401
+      Placeholder Creature Sprites (1)_17: 1386079527622020573
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
