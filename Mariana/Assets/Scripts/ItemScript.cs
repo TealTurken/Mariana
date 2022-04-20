@@ -38,16 +38,6 @@ public class ItemScript : MonoBehaviour
                 PickUp();
             }
 
-            else if (gameObject.tag == "Key")
-            {
-                PickUp();
-            }
-
-            else if (gameObject.tag == "Tool")
-            {
-                PickUp();
-            }
-
             else if (gameObject.tag == "Interactable")
             {
                 Operate();
@@ -59,16 +49,6 @@ public class ItemScript : MonoBehaviour
         if(collision.collider.tag == "Player")
         {
             if (gameObject.tag == "Weapon")
-            {
-                itemText.SetText("Press 'E' to pick up");
-            }
-
-            else if (gameObject.tag == "Tool")
-            {
-                itemText.SetText("Press 'E' to pick up");
-            }
-
-            else if (gameObject.tag == "Key")
             {
                 itemText.SetText("Press 'E' to pick up");
             }
@@ -102,34 +82,17 @@ public class ItemScript : MonoBehaviour
                 inventory.isFull[i] = true;
                 Instantiate(itemButton, inventory.slots[i].transform, false);
 
-                if (gameObject.tag == "Tool")
-                {
-                    inventory.hasTool = true;
-                }
-
                 Destroy (gameObject);
                 print ("Item picked up");
                 break;
             }
         }
-
-        
     }
 
     private void Operate()
     {
-        if (!inventory.hasTool)
-        {
-            itemText.SetText("The terminal appears to be broken...");
-        }
-
-        else if (inventory.hasTool && !terminalFixed)
-        {
-            minigameUI.SetActive(true);
-            itemText.gameObject.SetActive(false);
-        }
-
-
+        minigameUI.SetActive(true);
+        itemText.gameObject.SetActive(false);
 
         PlaySound(terminalSound);
     }
