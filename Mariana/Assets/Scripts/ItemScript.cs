@@ -125,15 +125,10 @@ public class ItemScript : MonoBehaviour
 
         else if (inventory.hasTool && !terminalFixed)
         {
-            itemText.SetText("The terminal is now functional!");
-            terminalFixed = true;
-        }
-
-        else if (inventory.hasTool && terminalFixed)
-        {
             minigameUI.SetActive(true);
             itemText.gameObject.SetActive(false);
         }
+
 
 
         PlaySound(terminalSound);

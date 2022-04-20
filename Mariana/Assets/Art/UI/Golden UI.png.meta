@@ -1352,9 +1352,9 @@ TextureImporter:
       name: Golden UI_1
       rect:
         serializedVersion: 2
-        x: 251
+        x: 340
         y: 448
-        width: 211
+        width: 122
         height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1693,7 +1693,7 @@ TextureImporter:
         width: 49
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1701,6 +1701,48 @@ TextureImporter:
       bones: []
       spriteID: 09abf93eac9e84220800000000000000
       internalID: 2470481453224278672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_18
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 156
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689888afe92ab65468c555a9f3c79ef0
+      internalID: 1111268001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_19
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 481
+        width: 74
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c19d86a19ab6546a408846a6f47977
+      internalID: 1475247641
       vertices: []
       indices: 
       edges: []
@@ -1726,9 +1768,11 @@ TextureImporter:
       Golden UI_13: -4548577693438988549
       Golden UI_16: -9119394092147599450
       Golden UI_4: 989629944673886434
+      Golden UI_18: 1111268001
       Golden UI_14: 1348691806210712596
       Golden UI_7: -2273050595131928495
       Golden UI_10: -5437648785584773579
+      Golden UI_19: 1146996734
       Golden UI_3: -7058061647712785457
       Golden UI_8: -2820328857870186524
       Golden UI_1: 3078635908297703969

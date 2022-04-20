@@ -20,7 +20,7 @@ public class MinigameScript : MonoBehaviour
    {
        counter = 0;
        shuffledButtons=buttons.OrderBy(a => Random.Range(0,100)).ToList(); // shuffle the buttons with random numbers from 0 too 100
-       for (int i=1;i<11;i++)
+       for (int i=1;i<5;i++)
        {
            shuffledButtons[i - 1].GetComponentInChildren<Text>().text = i.ToString(); // set the text on buttons to correct number
            shuffledButtons[i - 1].interactable = true; // set all buttons presentable
@@ -35,7 +35,7 @@ public class MinigameScript : MonoBehaviour
        counter++; // increases the counter
        button.interactable = false; // disables the button
        button.image.color = Color.green; // sets color to green when correct
-       if(counter==10) // check if all buttons are pressed already
+       if(counter==4) // check if all buttons are pressed already
        {
            StartCoroutine(presentResult(true)); // present result for winning
        }
