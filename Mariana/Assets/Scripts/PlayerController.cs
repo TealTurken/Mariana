@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
@@ -11,9 +12,12 @@ public class PlayerController : MonoBehaviour
     Vector2 movement;
     GameObject flashlight;
 
-    int Health = 3;
+    public int maxHealth = 5;
+    public int currentHealth;
+    public HealthBar healthBar;
+    public TextMeshProUGUI deadText;
+    public GameObject gameOverUI;
     private bool isInvulnerable;
-    float Oxygen = 100;
     float moveSpeed; // actual movement speed applied to player character
     float sprintSpeed; // actual sprint speed
     #region Level Movement Speed
@@ -33,6 +37,9 @@ public class PlayerController : MonoBehaviour
     private float invulnerablityDurationSeconds = 3.0f;
 
     AudioSource audioSource;
+    public AudioSource musicSource;
+    public AudioClip dmgSound;
+    public AudioClip defeatSound;
 
     void Start()
     {
@@ -59,7 +66,18 @@ public class PlayerController : MonoBehaviour
                 sceneSpeed = moveSpeed;
             }
         }
+
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+        deadText.gameObject.SetActive(false);
+        gameOverUI.gameObject.SetActive(false);
+
         #endregion
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 
     void Update()
@@ -99,6 +117,12 @@ public class PlayerController : MonoBehaviour
            moveSpeed = sceneSpeed;
        }
         #endregion
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            TakeDamage(1);
+            PlaySound(dmgSound);
+        }
     }
 
     void FixedUpdate() 
@@ -110,20 +134,32 @@ public class PlayerController : MonoBehaviour
        rigidbody2d.MovePosition(position); 
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
+        PlaySound(dmgSound);       
         if (isInvulnerable) return;
-        else Health--;
-
-        if (Health <= 0) // Player Death
+        else maxHealth--;
+     
+        StartCoroutine(InvulnerabilityFrames());
+        
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+        
+        if (currentHealth <= 0) // Player Death
         {
-            Health = 0;
-            Destroy(this);
-            Debug.LogError("You are dead");
+            currentHealth = 0;
+            Destroy(gameObject);
+            deadText.gameObject.SetActive(true);
+            gameOverUI.gameObject.SetActive(true);
+
+            musicSource.clip = (defeatSound);
+            musicSource.Play();
+            musicSource.loop = false;  
+            
+            Debug.Log("You are dead");
             return;
         }
-        
-        StartCoroutine(InvulnerabilityFrames());
+
     }    
 
     private IEnumerator InvulnerabilityFrames()

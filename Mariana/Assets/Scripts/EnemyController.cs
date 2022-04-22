@@ -21,7 +21,6 @@ public class EnemyController : MonoBehaviour
     public Path path;
     private PlayerController Player;
     private Seeker seeker;
-    AudioSource audioSource;
     
     // Start is called before the first frame update
     void Start()
@@ -124,9 +123,13 @@ public class EnemyController : MonoBehaviour
        rigidbody2d.MovePosition(position);
     } */
 
-    private void OnTriggerEnter(Collider other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.tag == "Player") Player.TakeDamage(); // CURRENTLY DEFUNCT
+      PlayerController player = other.gameObject.GetComponent<PlayerController>();
+      if (player != null)
+      {
+          player.TakeDamage(1);
+      }
     }
 
     public void OnPathComplete(Path p)
