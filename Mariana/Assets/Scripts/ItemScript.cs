@@ -8,6 +8,7 @@ public class ItemScript : MonoBehaviour
 {
     private bool interactAllowed;
     public TextMeshProUGUI itemText;
+    public TextMeshProUGUI repairText;
     public GameObject minigameUI;
     private Inventory inventory;
     public GameObject itemButton;
@@ -18,6 +19,7 @@ public class ItemScript : MonoBehaviour
     private void Start() 
     {
         itemText.gameObject.SetActive(false);
+        repairText.gameObject.SetActive(false);
         minigameUI.SetActive(false);
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
 
@@ -68,6 +70,7 @@ public class ItemScript : MonoBehaviour
         if(collision.collider.tag == "Player")
         {
             itemText.gameObject.SetActive(false);
+            repairText.gameObject.SetActive(false);
             minigameUI.SetActive(false);
             interactAllowed = false;
         }

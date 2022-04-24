@@ -3,17 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.UI;
+using TMPro;
 
 public class MinigameScript : MonoBehaviour
 {
+    public GameObject objectToDisable;
+    public static bool disabled = false;
+    public TextMeshProUGUI repairText;
     public List<Button> buttons; //list of buttons
-    public List<Button> shuffledButtons; // shuffled version of this list
+    public List<Button> shuffledButtons; // shuffled version of this list 
     int counter = 0; // keeps track of how many buttons were pressed in sequence
 
     // Start is called before the first frame update
     void Start()
     {
         RestartTheGame(); //in the beginning just restart game session
+        repairText.gameObject.SetActive(false);
     }
 
    public void RestartTheGame()
@@ -38,6 +43,8 @@ public class MinigameScript : MonoBehaviour
        if(counter==4) // check if all buttons are pressed already
        {
            StartCoroutine(presentResult(true)); // present result for winning
+           repairText.gameObject.SetActive(true);
+           objectToDisable.SetActive(true);
        }
      }
      else

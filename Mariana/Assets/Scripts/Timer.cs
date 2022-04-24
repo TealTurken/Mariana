@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
     bool timerActive;
     public float timeValue=300;
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI labelText;
     public TextMeshProUGUI rescueText;
     public GameObject contactUI;
 
@@ -22,6 +23,8 @@ public class Timer : MonoBehaviour
 
         rescueText.gameObject.SetActive(false);
         contactUI.gameObject.SetActive(false);
+        timerText.gameObject.SetActive(false);
+        labelText.gameObject.SetActive(false);
     }
     void Update()
     { 
@@ -67,5 +70,7 @@ public class Timer : MonoBehaviour
     {
         timerActive = true;
         contactUI.gameObject.SetActive(false);
+        timerText.gameObject.SetActive(true);
+        labelText.gameObject.SetActive(true);
     }
 }
