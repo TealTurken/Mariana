@@ -8,17 +8,21 @@ public class EnemyController : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
 
-    public float moveSpeed;
-    public float stoppingDistance;
-    public float nextWaypointDistance = 3;
-    private int currentWaypoint = 0;
-    public bool reachedEndOfPath;
-    public float repathRate = 0.5f;
+    public  float moveSpeed; // chasing speed
+    private float originalMoveSpeed; // used to reset creature's movement speed when done chasing
+    public  float chaseDistance = 10f;
+    private bool  ischasing;
+    
+    public  float stoppingDistance;
+    public  float nextWaypointDistance = 3;
+    private int   currentWaypoint = 0;
+    public  bool  reachedEndOfPath;
+    
+    public  float repathRate = 0.5f;
     private float lastRepath = float.NegativeInfinity;
-    float horizontal;
-    float vertical;
-    public Transform target;
-    public Path path;
+    
+    public  Transform target;
+    public  Path path;
     private PlayerController Player;
     private Seeker seeker;
     
@@ -30,10 +34,27 @@ public class EnemyController : MonoBehaviour
 
         seeker = GetComponent<Seeker>();
         seeker.StartPath(transform.position, target.position, OnPathComplete);
+        originalMoveSpeed = moveSpeed;
     }
 
      void Update()
     {
+        #region Chasing
+        chaseDistance = Vector3.Distance(rigidbody2d.position, target.position);
+        
+        if (chaseDistance >= 10 && ischasing) // monster is no longer chasing
+        {
+            moveSpeed = 2;
+            ischasing = false;
+            Debug.Log("Is no longer chasing!");
+        }
+        else if (chaseDistance <= 10 && !ischasing) // monster is chasing!
+        {
+            moveSpeed = originalMoveSpeed;
+            ischasing = true;
+        }
+        #endregion
+
         if (Time.time > lastRepath + repathRate && seeker.IsDone())
         {
             lastRepath = Time.time;
@@ -134,7 +155,7 @@ public class EnemyController : MonoBehaviour
 
     public void OnPathComplete(Path p)
     {
-        Debug.Log("Yay, we got a path back. Did it have an error? " + p.error);
+        //Debug.Log("Yay, we got a path back. Did it have an error? " + p.error);
 
         if (!p.error)
         {

@@ -164,13 +164,13 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator InvulnerabilityFrames()
     {
-        Debug.Log("Player is invulnerable");
+        //Debug.Log("Player is invulnerable");
         isInvulnerable = true;
 
         yield return new WaitForSeconds(invulnerablityDurationSeconds);
 
         isInvulnerable = false;
-        Debug.Log("Player is no longer invulnerable");
+        //Debug.Log("Player is no longer invulnerable");
     }
 
 }

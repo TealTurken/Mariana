@@ -6,18 +6,19 @@ public class CreatureSpawn : MonoBehaviour
 {
 
     [SerializeField]
-    private GameObject enemy;
+    private GameObject[] EnemySpawnList;
     [SerializeField]
     private float SpawnTime = 30f;
+    private int randomNumber;
 
-    // Start is called before the first frame update
     void Start()
     {
+        randomNumber = Random.Range(0, EnemySpawnList.Length);
         Invoke(nameof(SpawnEnemy), SpawnTime);
     }
 
     void SpawnEnemy()
     {
-        Instantiate(enemy, this.transform);
+        Instantiate(EnemySpawnList[randomNumber], this.transform);
     }
 }
