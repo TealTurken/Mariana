@@ -66,6 +66,10 @@ public class MinigameScript : MonoBehaviour
                button.interactable = false; // set all buttons to noninteractable state
            }
        } 
+       else if (win)
+        {
+            objectToDisable.GetComponent<LightScript>().TurnOnAllLights();
+        }
       yield return new WaitForSeconds(2f); // wait for 2 seconds so player can see the result
       RestartTheGame(); // restarts the game again
    }
