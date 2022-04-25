@@ -87,24 +87,8 @@ public class PlayerController : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
 
         Vector2 move = new Vector2(horizontal, vertical);
-       
-        #region 4 Directional Movement
-        if (horizontal > 0.5 || horizontal < -0.5)
-        {
-            vertical = 0;
-            if (horizontal > 0.5) flashlight.transform.rotation = Quaternion.Euler(0, 0, 90);
-            if (horizontal < -0.5) flashlight.transform.rotation = Quaternion.Euler(0, 0, -90);
-            audioSource.Play();
-        }
 
-        if (vertical > 0.5 || vertical < -0.5)
-        {
-            horizontal = 0;
-            if (vertical > 0.5) flashlight.transform.rotation = Quaternion.Euler(0, 0, 180);
-            if (vertical < -0.5) flashlight.transform.rotation = Quaternion.Euler(0, 0, 0);
-            audioSource.Play();
-        }
-        #endregion
+        FaceMouse();
 
         #region Sprint
         if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -131,8 +115,9 @@ public class PlayerController : MonoBehaviour
       Vector2 position = rigidbody2d.position;
        position.x = position.x + moveSpeed * horizontal * Time.deltaTime;
        position.y = position.y + moveSpeed * vertical * Time.deltaTime;
-       
-       rigidbody2d.MovePosition(position); 
+       rigidbody2d.MovePosition(position);
+
+        
     }
 
     public void TakeDamage(int damage)
@@ -173,6 +158,15 @@ public class PlayerController : MonoBehaviour
         isInvulnerable = false;
         //Debug.Log("Player is no longer invulnerable");
     }
+    
+    void FaceMouse() // this makes the flashlight face the direction the mouse is in
+    {
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
+        Vector2 direction = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
+
+        flashlight.transform.up = -direction;
+    }
 }
 
