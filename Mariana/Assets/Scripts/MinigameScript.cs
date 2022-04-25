@@ -8,6 +8,7 @@ using TMPro;
 public class MinigameScript : MonoBehaviour
 {
     public GameObject objectToDisable;
+    public GameObject audioToDisable;
     public static bool disabled = false;
     public TextMeshProUGUI repairText;
     public List<Button> buttons; //list of buttons
@@ -45,6 +46,7 @@ public class MinigameScript : MonoBehaviour
            StartCoroutine(presentResult(true)); // present result for winning
            repairText.gameObject.SetActive(true);
            objectToDisable.SetActive(true);
+           audioToDisable.SetActive(false);
        }
      }
      else

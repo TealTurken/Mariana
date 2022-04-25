@@ -123,6 +123,7 @@ public class PlayerController : MonoBehaviour
             TakeDamage(1);
             PlaySound(dmgSound);
         }
+
     }
 
     void FixedUpdate() 

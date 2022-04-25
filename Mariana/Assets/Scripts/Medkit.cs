@@ -36,6 +36,7 @@ public class Medkit : MonoBehaviour
 
      void OnCollisionEnter2D(Collision2D other)
     {
+        
         if(other.collider.tag == "Player")
         {
             if (gameObject.tag == "Interactable")
@@ -45,15 +46,6 @@ public class Medkit : MonoBehaviour
 
             itemText.gameObject.SetActive(true);
             interactAllowed = true;
-        }
-
-        PlayerController controller = other.gameObject.GetComponent<PlayerController>();
-        if (controller != null)
-        {
-            if(controller.currentHealth < controller.maxHealth)
-            {
-                controller.TakeDamage(1);
-            }
         }
     }
 
@@ -66,11 +58,10 @@ public class Medkit : MonoBehaviour
         }
     }
 
-     private void Heal()
+    void Heal()
     {
+        Destroy(gameObject);
         itemText.gameObject.SetActive(false);
         PlaySound(healSound);
-
-        Destroy(gameObject);
     }
 }

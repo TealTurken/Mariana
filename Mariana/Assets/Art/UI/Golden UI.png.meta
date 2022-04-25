@@ -1269,7 +1269,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -1314,6 +1314,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1604,10 +1616,10 @@ TextureImporter:
       name: Golden UI_13
       rect:
         serializedVersion: 2
-        x: 704
-        y: 8
-        width: 152
-        height: 292
+        x: 802
+        y: 93
+        width: 44
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1735,7 +1747,7 @@ TextureImporter:
         width: 74
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1743,6 +1755,69 @@ TextureImporter:
       bones: []
       spriteID: 34c19d86a19ab6546a408846a6f47977
       internalID: 1475247641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_20
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 140
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa2faac9675e58448e935051bfa82de
+      internalID: -620866884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_21
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 43
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b2bdd467a94ee4399f6086240c6491
+      internalID: 197334233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golden UI_22
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 88
+        width: 20
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f31fbd9b647de646a824bff194af398
+      internalID: 103276204
       vertices: []
       indices: 
       edges: []
@@ -1772,10 +1847,13 @@ TextureImporter:
       Golden UI_14: 1348691806210712596
       Golden UI_7: -2273050595131928495
       Golden UI_10: -5437648785584773579
+      Golden UI_21: 2080763765
       Golden UI_19: 1146996734
       Golden UI_3: -7058061647712785457
+      Golden UI_22: 103276204
       Golden UI_8: -2820328857870186524
       Golden UI_1: 3078635908297703969
+      Golden UI_20: -620866884
       Golden UI_6: -4388426578114905967
       Golden UI_17: 2470481453224278672
   spritePackingTag: 

@@ -141,7 +141,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -186,6 +186,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -968,7 +980,6 @@ TextureImporter:
     nameFileIdTable:
       item_set_28: 7790704116610984446
       item_set_11: -1508729215899880261
-      item_set_35: -9074813375338345262
       item_set_24: -8230329017931816111
       item_set_14: 6832546329401522318
       item_set_27: -6764973803432991822
@@ -998,9 +1009,10 @@ TextureImporter:
       item_set_18: 177331196524765518
       item_set_31: 4404992562893915829
       item_set_30: 3759604737225547955
+      item_set_35: -9074813375338345262
       item_set_10: 5479463866406345005
-      item_set_12: 3301519653698581179
       item_set_16: -4478497115794843921
+      item_set_12: 3301519653698581179
       item_set_3: 1010182768036945393
   spritePackingTag: 
   pSDRemoveMatte: 0
