@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
         flashlight = this.transform.GetChild(0).gameObject; // gets the flashlight on the player
+        firePoint = this.transform.GetChild(1).gameObject;
         #region Movement speed
         newScene = SceneManager.GetActiveScene();
         if (newScene.IsValid())
@@ -123,9 +124,9 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        PlaySound(dmgSound);       
         if (isInvulnerable) return;
         else maxHealth--;
+        PlaySound(dmgSound);       
      
         StartCoroutine(InvulnerabilityFrames());
         
@@ -168,6 +169,7 @@ public class PlayerController : MonoBehaviour
         Vector2 direction = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
 
         flashlight.transform.up = -direction;
+        firePoint.transform.up = direction;
     }
 }
 

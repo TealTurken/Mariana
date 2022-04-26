@@ -15,6 +15,7 @@ public class Medkit : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        Player = FindObjectOfType<PlayerController>();
     }
 
      public void PlaySound(AudioClip clip)
@@ -60,8 +61,10 @@ public class Medkit : MonoBehaviour
 
     void Heal()
     {
-        Destroy(gameObject);
         itemText.gameObject.SetActive(false);
         PlaySound(healSound);
+        Player.currentHealth = 5;
+        Player.healthBar.SetHealth(Player.currentHealth);
+        Destroy(gameObject);
     }
 }

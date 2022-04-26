@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7943230790475360613}
   - component: {fileID: 1745040446635531583}
   - component: {fileID: 1960578649}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Creature
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -146,6 +146,7 @@ MonoBehaviour:
   reachedEndOfPath: 0
   repathRate: 0.5
   target: {fileID: 0}
+  tazerSound: {fileID: 0}
 --- !u!114 &7943230790475360613
 MonoBehaviour:
   m_ObjectHideFlags: 0
