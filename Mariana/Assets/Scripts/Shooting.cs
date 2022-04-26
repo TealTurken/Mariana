@@ -10,6 +10,9 @@ public class Shooting : MonoBehaviour
     public GameObject laserPrefab;
 
     public float laserForce = 20f;
+    [SerializeField]
+    private float CooldownTime = 5f;
+    private bool isOnCooldown = false;
 
     void Start()
     {
@@ -27,7 +30,11 @@ public class Shooting : MonoBehaviour
     {
         if(Input.GetButtonDown("Fire2"))
         {
-            Shoot();
+            if (!isOnCooldown)
+            {
+                Shoot();
+                StartCoroutine(Cooldown());
+            }
         }
     }
 
@@ -37,5 +44,14 @@ public class Shooting : MonoBehaviour
         Rigidbody2D rb = laser.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * laserForce, ForceMode2D.Impulse);
         PlaySound(laserSound);
+    }
+
+    private IEnumerator Cooldown()
+    {
+        isOnCooldown = true;
+
+        yield return new WaitForSeconds(CooldownTime);
+
+        isOnCooldown = false;
     }
 }

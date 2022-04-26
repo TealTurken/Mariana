@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1745040446635531583}
   - component: {fileID: 1960578649}
   m_Layer: 8
-  m_Name: Creature
+  m_Name: Creature 1
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1264879236344067857, guid: 2b481a7416c38d949a58681f95524177, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.45490196, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
