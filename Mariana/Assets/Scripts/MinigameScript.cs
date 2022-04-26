@@ -7,7 +7,10 @@ using TMPro;
 
 public class MinigameScript : MonoBehaviour
 {
-    public GameObject objectToDisable;
+    public GameObject allLights;
+    public GameObject spareLights;
+    public GameObject roomLights;
+    public GameObject hallwayLights;
     public GameObject audioToDisable;
     public static bool disabled = false;
     public TextMeshProUGUI repairText;
@@ -44,8 +47,12 @@ public class MinigameScript : MonoBehaviour
        if(counter==4) // check if all buttons are pressed already
        {
            StartCoroutine(presentResult(true)); // present result for winning
+           
            repairText.gameObject.SetActive(true);
-           objectToDisable.SetActive(true);
+           allLights.SetActive(true);
+           spareLights.SetActive(true);
+           roomLights.SetActive(true);
+           hallwayLights.SetActive(true);
            audioToDisable.SetActive(false);
        }
      }
@@ -66,10 +73,7 @@ public class MinigameScript : MonoBehaviour
                button.interactable = false; // set all buttons to noninteractable state
            }
        } 
-       else if (win)
-        {
-            objectToDisable.GetComponent<LightScript>().TurnOnAllLights();
-        }
+       
       yield return new WaitForSeconds(2f); // wait for 2 seconds so player can see the result
       RestartTheGame(); // restarts the game again
    }

@@ -8,7 +8,6 @@ public class LightScript : MonoBehaviour
     private GameObject spareLights;
     private GameObject roomLights;
     private GameObject hallwayLights;
-    private GameObject audioToDisable;
     public GameObject alarm;
     private static bool disabled = false;
     private int chance;
@@ -58,27 +57,32 @@ public class LightScript : MonoBehaviour
         spareLights.SetActive(true);
         roomLights.SetActive(true);
         hallwayLights.SetActive(true);
+        Debug.Log("The Lights are on");
     }
 
     public void TurnOffAllLights()
     {
         allLights.SetActive(false);
         alarm.SetActive(true);
+        Debug.Log("The Lights are out");
     }
     public void TurnOffSpareLights()
     {
         spareLights.SetActive(false);
         alarm.SetActive(true);
+        Debug.Log("The Lights are out");
     }
     public void TurnOffRoomLights()
     {
         roomLights.SetActive(false);
         alarm.SetActive(true);
+        Debug.Log("The Lights are out");
     }
     public void TurnOffHallwayLights()
     {
         hallwayLights.SetActive(false);
         alarm.SetActive(true);
+        Debug.Log("The Lights are out");
     }
 
 }
