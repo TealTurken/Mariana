@@ -25,16 +25,29 @@ public class EnemyController : MonoBehaviour
     public  Path path;
     private PlayerController Player;
     private Seeker seeker;
+    private float stunTimer;
+    private bool stun;
+    AudioSource audioSource;
+    public AudioClip tazerSound;
     
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
         seeker = GetComponent<Seeker>();
         seeker.StartPath(transform.position, target.position, OnPathComplete);
         originalMoveSpeed = moveSpeed;
+
+        stunTimer = 0;
+        stun = false;
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 
      void Update()
@@ -114,6 +127,19 @@ public class EnemyController : MonoBehaviour
 
         // Note that SimpleMove takes a velocity in meters/second, so we should not multiply by Time.deltaTime
         transform.position += velocity * Time.deltaTime;
+
+        if (stun) //Determines how long the creature is stunned
+       {
+           stunTimer += Time.deltaTime;
+           if(stunTimer >= 5)
+           {
+               moveSpeed = 2;
+               stunTimer = 0;
+               stun = false;
+               rigidbody2d.simulated = true;
+               Debug.Log("Creature is unstunned!");
+           }
+       }
     }
 
 
@@ -151,6 +177,15 @@ public class EnemyController : MonoBehaviour
       {
           player.TakeDamage(1);
       }
+    }
+
+    public void Stun() //Stuns the creature
+    {
+        stun = true;
+        moveSpeed = 0;
+        rigidbody2d.simulated = false;
+        PlaySound(tazerSound);
+        Debug.Log("Creature is Stunned!");
     }
 
     public void OnPathComplete(Path p)

@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     Vector2 movement;
     GameObject flashlight;
+    GameObject firePoint;
 
     public int maxHealth = 5;
     public int currentHealth;

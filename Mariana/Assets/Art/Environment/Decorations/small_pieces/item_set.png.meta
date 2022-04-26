@@ -884,7 +884,6 @@ TextureImporter:
     nameFileIdTable:
       item_set_28: -1384673970
       item_set_11: 574041098
-      item_set_35: 206690693
       item_set_24: -419876684
       item_set_14: -219340784
       item_set_27: 175970656
@@ -914,9 +913,10 @@ TextureImporter:
       item_set_18: 1543626997
       item_set_31: 1009399496
       item_set_30: 482058849
+      item_set_35: 206690693
       item_set_10: 1702601987
-      item_set_12: 1465689804
       item_set_16: -985292686
+      item_set_12: 1465689804
       item_set_3: 1420330529
   spritePackingTag: 
   pSDRemoveMatte: 0
