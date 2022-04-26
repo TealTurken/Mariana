@@ -46,4 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemySpawnList:
   - {fileID: 7943230790475360605, guid: 0bc3c7c4f62ab7449a513b2bd7ce1ff6, type: 3}
+  - {fileID: 7943230790475360605, guid: 93f369156a7bcee40809d62a3d58fd0e, type: 3}
+  - {fileID: 7943230790475360605, guid: a1d7535d08f4ea44c84c617a96f4df78, type: 3}
+  - {fileID: 7943230790475360605, guid: 911cf8ab0b28e094aa6a49839da4b057, type: 3}
   SpawnTime: 3

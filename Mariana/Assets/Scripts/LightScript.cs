@@ -27,9 +27,9 @@ public class LightScript : MonoBehaviour
         
         // Each below has a 1 in 4 chances of triggering
         if (chance == 0) TurnOffAllLights();            // 1/4
-        if (chance == 33333) TurnOffHallwayLights();    // 2/4
-        if (chance == 66666) TurnOffRoomLights();       // 3/4
-        if (chance == 99999) TurnOffSpareLights();      // 4/4
+        if (chance >= 1 && chance <= 10) TurnOffHallwayLights();    // 2/4
+        if (chance == 3 || chance == 4) TurnOffRoomLights();       // 3/4
+        if (chance == 5 || chance == 6) TurnOffSpareLights();      // 4/4
 
 		if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -57,32 +57,32 @@ public class LightScript : MonoBehaviour
         spareLights.SetActive(true);
         roomLights.SetActive(true);
         hallwayLights.SetActive(true);
-        Debug.Log("The Lights are on");
+        Debug.Log("All Lights are on");
     }
 
     public void TurnOffAllLights()
     {
         allLights.SetActive(false);
         alarm.SetActive(true);
-        Debug.Log("The Lights are out");
+        Debug.Log("All Lights are out");
     }
     public void TurnOffSpareLights()
     {
         spareLights.SetActive(false);
         alarm.SetActive(true);
-        Debug.Log("The Lights are out");
+        Debug.Log("The Spare Lights are out");
     }
     public void TurnOffRoomLights()
     {
         roomLights.SetActive(false);
         alarm.SetActive(true);
-        Debug.Log("The Lights are out");
+        Debug.Log("The Room Lights are out");
     }
     public void TurnOffHallwayLights()
     {
         hallwayLights.SetActive(false);
         alarm.SetActive(true);
-        Debug.Log("The Lights are out");
+        Debug.Log("The Hallway Lights are out");
     }
 
 }
