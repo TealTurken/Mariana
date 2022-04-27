@@ -146,7 +146,7 @@ MonoBehaviour:
   reachedEndOfPath: 0
   repathRate: 0.5
   target: {fileID: 0}
-  tazerSound: {fileID: 0}
+  tazerSound: {fileID: 8300000, guid: 1af217e559ff0b04dae3d727d4a0e2fc, type: 3}
 --- !u!114 &7943230790475360613
 MonoBehaviour:
   m_ObjectHideFlags: 0

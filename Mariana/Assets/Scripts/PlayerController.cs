@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public HealthBar healthBar;
     public TextMeshProUGUI deadText;
     public GameObject gameOverUI;
+    public GameObject mapUI;
     private bool isInvulnerable;
     float moveSpeed; // actual movement speed applied to player character
     float sprintSpeed; // actual sprint speed
@@ -73,6 +74,7 @@ public class PlayerController : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
         deadText.gameObject.SetActive(false);
         gameOverUI.gameObject.SetActive(false);
+        mapUI.gameObject.SetActive(false);
 
         #endregion
     }
@@ -109,6 +111,15 @@ public class PlayerController : MonoBehaviour
             TakeDamage(1);
             PlaySound(dmgSound);
         }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            mapUI.gameObject.SetActive(true);
+        }
+        if (Input.GetKeyUp(KeyCode.Tab))
+       {
+           mapUI.gameObject.SetActive(false);
+       }
 
     }
 
